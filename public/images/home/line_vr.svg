@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 950.1 109.76">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #232323;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-3 {
+        font-size: 35.01px;
+      }
+
+      .cls-3, .cls-4 {
+        font-family: PlusJakartaSans-SemiBold, 'Plus Jakarta Sans';
+        font-weight: 600;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-4 {
+        font-size: 32.8px;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <g>
+        <line class="cls-1" x1="182.81" y1="54.88" x2="949.56" y2="54.88"/>
+        <circle cx="943.22" cy="55.35" r="6.88"/>
+      </g>
+      <g>
+        <circle class="cls-2" cx="140.25" cy="54.88" r="53.88"/>
+        <text class="cls-4" transform="translate(109.04 83.5)"><tspan x="0" y="0">360</tspan></text>
+        <text class="cls-3" transform="translate(115.3 50.37)"><tspan x="0" y="0">VR</tspan></text>
+        <circle class="cls-1" cx="171.24" cy="54.63" r="3.84"/>
+      </g>
+      <g>
+        <circle cx="9.51" cy="55.96" r="9.51"/>
+        <circle cx="44.53" cy="55.96" r="9.51"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -4,24 +4,25 @@ import Image from 'next/image'
 
 export default function VRTourSection() {
   return (
-    <section id="section-master-plan" className="w-full py-12">
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-8">
-        <div className="relative w-full h-[300px] md:h-[500px] rounded-3xl overflow-hidden group cursor-pointer">
+    <section id="section-master-plan" className="w-full py-9">
+      <div className="w-full max-w-[clamp(903.47px,88.23vw,3388px)] mx-auto px-4 sm:px-8">
+        <div className="flex justify-end mb-8" aria-hidden>
           <Image
-            src="/images/sections/vr_tour.png"
+            src="/images/home/line_vr.svg"
+            alt=""
+            width={950}
+            height={110}
+            className="w-[clamp(506.67px,49.48vw,1900px)] h-auto object-contain object-right"
+          />
+        </div>
+        <div className="relative w-full h-[300px] md:h-[745px] rounded-[2.5rem] md:rounded-[3rem] overflow-hidden group cursor-pointer">
+          <Image
+            src="/images/home/vr_images.png"
             alt="VR Tour"
             fill
             className="object-cover transition-transform duration-700 group-hover:scale-105"
             sizes="(max-width: 768px) 100vw, 1440px"
           />
-          <div className="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/10 transition-colors">
-            <div className="bg-white/20 backdrop-blur-md border border-white/40 rounded-full w-20 h-20 flex items-center justify-center">
-              <div className="text-white text-center">
-                <span className="block text-xs font-bold">360</span>
-                <span className="block text-xs">VR</span>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
