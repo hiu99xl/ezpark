@@ -187,7 +187,7 @@ export default function HeroSection({ pageData }: HeroSectionProps) {
             </div>
           </div>
         </Link>
-        <div className="w-[clamp(80px,10vw,140px)] rounded-xl shrink-0 bg-white/80 shadow border border-white/50" />
+        <div className="w-[clamp(80px,10vw,140px)] rounded-l-xl shrink-0 bg-white/80 shadow border border-white/50" />
       </div>
     </section>
   )

@@ -4,3 +4,5 @@ export { default as DownArrow } from './down-arrow';
 export { default as HeaderTaglineLogoSvg } from './header-tagline-logo';
 export { default as HeaderExpandIconSvg } from './header-expand-icon';
 export { default as ArrowRightSvg } from './arrow-right';
+export { default as LocationIcon } from './location-icon';
+export { default as FloorPlanIcon } from './floor-plan-icon';
