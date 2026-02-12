@@ -27,7 +27,6 @@ export default function InvestorProcessSection() {
           className="object-cover opacity-30"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black" />
       </div>
 
       <div className="relative z-10 max-w-[1440px] mx-auto px-4 sm:px-8">

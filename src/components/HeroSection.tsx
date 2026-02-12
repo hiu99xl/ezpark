@@ -150,7 +150,7 @@ export default function HeroSection({ pageData }: HeroSectionProps) {
       </div>
 
       {/* Bottom right: card – white bg, dark grey text, CTA = white btn + dark grey arrow btn */}
-      <div className="absolute bottom-8 right-[clamp(20px,4vw,60px)] lg:right-[clamp(61px,5.94vw,228px)] z-10 flex gap-4">
+      <div className="absolute bottom-8 right-0 z-10 flex gap-4">
         <Link
           href="#section-investment-env"
           className={cn(
