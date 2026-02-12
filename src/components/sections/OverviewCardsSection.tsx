@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 export default function OverviewCardsSection() {
   return (
-    <section className="bg-[#111] py-20">
+    <section id="section-overview" className="bg-[#111] py-20">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-8">
         <div className="text-center mb-16">
           <p className="text-gray-400 text-sm uppercase tracking-widest mb-2">Cụm công nghiệp</p>

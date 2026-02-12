@@ -3,8 +3,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { MenuIconSvg } from '../svg';
 import { cn } from '@/lib/utils';
-import { useLocale, useTranslations } from 'next-intl';
-import { Link } from '@/i18n/navigation';
+import { useTranslations } from 'next-intl';
 
 /**
  * Menu position types - mô tả vị trí của menu dropdown so với button icon
@@ -96,8 +95,6 @@ export default function MenuButton({
   className,
   isScrollDown,
 }: MenuButtonProps) {
-  const t = useTranslations('header.menu');
-  const locale = useLocale();
   const menuRef = useRef<HTMLDivElement>(null);
   const [isOpen, setIsOpen] = useState(false);
 
@@ -169,20 +166,12 @@ export default function MenuButton({
       {isOpen && (
         <div
           className={cn(
-            // Base styles
-            `absolute rounded-[clamp(10px,3.2vw,25px)] lg:rounded-3xl shadow-2xl overflow-hidden z-100
-            menu-container-animate backdrop-blur-md bg-white/35 border border-white/30
-            px-[clamp(19px,6.4vw,49px)] lg:px-[2vw] py-6 lg:py-[1.5vw] pt-8 lg:pt-[1.75vw]`,
-            
-            // Size: Mobile fixed width, Desktop auto width
-            `min-w-[clamp(209px,70.4vw,539px)] lg:w-max lg:h-fit`,
-            
-            // Position
+            // Base: white bg 29% opacity, padding 17px top, 19px bottom, 36px left/right, radius 8px
+            'absolute rounded-[8px] shadow-2xl overflow-hidden z-100 menu-container-animate bg-white/[0.29] backdrop-blur-md',
+            'pt-[17px] pb-[19px] px-[36px]',
+            'min-w-[clamp(209px,70.4vw,539px)] lg:w-max lg:h-fit',
             getPositionClasses(position)
           )}
-          style={{
-            background: 'linear-gradient(135deg, rgba(254, 243, 199, 0.3) 0%, rgba(254, 215, 170, 0.3) 25%, rgba(191, 219, 254, 0.3) 50%, rgba(224, 231, 255, 0.3) 75%, rgba(243, 232, 255, 0.3) 100%)',
-          }}
         >
           <MenuDropdownContent onClose={() => setIsOpen(false)} onScrollTo={handleScrollTo} />
         </div>
@@ -191,9 +180,17 @@ export default function MenuButton({
   );
 }
 
+/** Menu items: section id and i18n key */
+const MENU_ITEMS = [
+  { selector: '#section-overview', key: 'overview' as const },
+  { selector: '#section-master-plan', key: 'masterPlan' as const },
+  { selector: '#section-advantages', key: 'advantages' as const },
+  { selector: '#section-investor-process', key: 'investorProcess' as const },
+  { selector: '#section-investment-env', key: 'investmentEnv' as const },
+] as const;
+
 /**
- * Shared menu dropdown content (links and sections).
- * Used by MenuButton and by Legacy hero icon on mobile.
+ * Shared menu dropdown content: 5 section links (Overview, Master Plan, Advantages, Investor Process, Investment Env).
  */
 export function MenuDropdownContent({
   onClose,
@@ -203,7 +200,6 @@ export function MenuDropdownContent({
   onScrollTo?: (selector: string) => (e: React.MouseEvent) => void;
 }) {
   const t = useTranslations('header.menu');
-  const locale = useLocale();
 
   const handleScrollTo = (selector: string) => (e: React.MouseEvent) => {
     e.preventDefault();
@@ -217,82 +213,17 @@ export function MenuDropdownContent({
   const scrollHandler = onScrollTo ?? handleScrollTo;
 
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-3 gap-[clamp(14px,4.8vw,37px)] lg:gap-[1.67vw]">
-      {/* Column 1: Về EZ.PARK */}
-      <div className="menu-column-1 lg:col-span-1">
-        <h3
-          className="
-            font-bold text-gray-800 mb-[clamp(10px,3.2vw,25px)] lg:mb-[1.25vw] uppercase tracking-wide whitespace-nowrap
-            text-[clamp(9px,2.8vw,22px)] lg:text-[0.83vw]
-            cursor-default
-          "
+    <nav className="flex flex-col gap-[clamp(5px,1.6vw,12px)]">
+      {MENU_ITEMS.map(({ selector, key }) => (
+        <button
+          key={key}
+          type="button"
+          onClick={scrollHandler(selector)}
+          className="text-left text-[clamp(9px,2.8vw,22px)] lg:text-[0.83vw] text-gray-800 hover:text-primary hover:translate-x-1 transition-all duration-300 font-medium whitespace-nowrap"
         >
-          {t('aboutEzPark')}
-        </h3>
-        <div className="space-y-[clamp(5px,1.6vw,12px)] lg:space-y-3">
-          <Link
-            href="/"
-            onClick={onClose}
-            className="block text-[clamp(9px,2.8vw,22px)] lg:text-[0.83vw] text-gray-700 hover:text-primary hover:translate-x-1 transition-all duration-300 font-medium whitespace-nowrap"
-          >
-            {t('aboutIntro')}
-          </Link>
-        </div>
-      </div>
-
-      {/* Column 2: Dự Án Khu Công Nghiệp */}
-      <div className="menu-column-2 lg:col-span-1">
-        <h3
-          className="
-            font-bold text-gray-800 mb-[clamp(10px,3.2vw,25px)] lg:mb-[1.25vw] uppercase tracking-wide whitespace-nowrap
-            text-[clamp(9px,2.8vw,22px)] lg:text-[0.83vw]
-            cursor-default
-          "
-        >
-          {t('industrialProjects')}
-        </h3>
-        <div className="space-y-[clamp(5px,1.6vw,12px)] lg:space-y-3">
-          <Link
-            href={`https://bacninh-1.ezpark.vn/${locale}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={onClose}
-            className="block text-[clamp(9px,2.8vw,22px)] lg:text-[0.83vw] text-gray-700 hover:text-primary hover:translate-x-1 transition-all duration-300 font-medium whitespace-nowrap"
-          >
-            {t('projectBacNinh')}
-          </Link>
-          <Link
-            href={`https://hatinh-1.ezpark.vn/${locale}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={onClose}
-            className="block text-[clamp(9px,2.8vw,22px)] lg:text-[0.83vw] text-gray-700 hover:text-primary hover:translate-x-1 transition-all duration-300 font-medium whitespace-nowrap"
-          >
-            {t('projectHaTinh')}
-          </Link>
-          <Link
-            href={`https://daklak-1.ezpark.vn/${locale}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={onClose}
-            className="block text-[clamp(9px,2.8vw,22px)] lg:text-[0.83vw] text-gray-700 hover:text-primary hover:translate-x-1 transition-all duration-300 font-medium whitespace-nowrap"
-          >
-            {t('projectDakLak')}
-          </Link>
-        </div>
-      </div>
-
-      {/* Column 3: Liên hệ */}
-      <div className="menu-column-3 lg:col-span-1 space-y-[clamp(10px,3.2vw,25px)] lg:space-y-8">
-        <h3 className="text-[clamp(9px,2.8vw,22px)] lg:text-[0.83vw] font-bold text-gray-800 uppercase tracking-wide whitespace-nowrap">
-          <button
-            onClick={scrollHandler('#section-footer')}
-            className="hover:text-primary hover:translate-x-1 transition-all duration-300 text-left inline-block"
-          >
-            {t('contact')}
-          </button>
-        </h3>
-      </div>
-    </div>
+          {t(key)}
+        </button>
+      ))}
+    </nav>
   );
 }

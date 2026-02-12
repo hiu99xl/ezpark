@@ -11,16 +11,11 @@
       "contact": "연락처"
     },
     "menu": {
-      "aboutEzPark": "EZ.PARK 소개",
-      "aboutIntro": "일반 소개",
-      "visionMission": "비전 - 미션",
-      "partnersClients": "파트너 - 고객",
-      "industrialProjects": "산업단지 프로젝트",
-      "projectBacNinh": "EZ.PARK 박닌 I",
-      "projectHaTinh": "EZ.PARK 하띤 I",
-      "projectDakLak": "EZ.PARK 닥락 I",
-      "milestones": "EZ.PARK의 이정표",
-      "contact": "연락처"
+      "overview": "프로젝트 개요",
+      "masterPlan": "마스터 플랜",
+      "advantages": "차별화 경쟁력",
+      "investorProcess": "투자 절차",
+      "investmentEnv": "투자 환경"
     },
     "languages": {
       "vi": "베트남어",

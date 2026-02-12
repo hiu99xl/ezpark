@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 export default function VRTourSection() {
   return (
-    <section className="w-full bg-black py-12">
+    <section id="section-master-plan" className="w-full bg-black py-12">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-8">
         <div className="relative w-full h-[300px] md:h-[500px] rounded-3xl overflow-hidden group cursor-pointer">
           <Image

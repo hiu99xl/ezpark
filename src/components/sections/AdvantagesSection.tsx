@@ -6,7 +6,7 @@ const TEAL = '#428999'
 
 export default function AdvantagesSection() {
   return (
-    <section className="bg-white py-20">
+    <section id="section-advantages" className="bg-white py-20">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {/* Box 1: Title */}

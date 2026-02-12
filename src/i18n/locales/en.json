@@ -11,15 +11,11 @@
       "contact": "Contact"
     },
     "menu": {
-      "aboutEzPark": "ABOUT EZ.PARK",
-      "aboutIntro": "General Introduction",
-      "investorPartners": "Investor Partners",
-      "industrialProjects": "Industrial Zone Projects",
-      "projectBacNinh": "EZ.PARK Bac Ninh I",
-      "projectHaTinh": "EZ.PARK Ha Tinh I",
-      "projectDakLak": "EZ.PARK Dak Lak I",
-      "milestones": "Milestones of EZ.PARK",
-      "contact": "Contact"
+      "overview": "Project Overview",
+      "masterPlan": "Master Plan",
+      "advantages": "Key Advantages",
+      "investorProcess": "Investment Process",
+      "investmentEnv": "Investment Environment"
     },
     "languages": {
       "vi": "Vietnamese",
@@ -40,7 +36,17 @@
       "do": "DO",
       "better": "BETTER"
     },
-    "explore": "Explore Now",
+    "subtitle": "industrial zone",
+    "titleBrand": "EZ.PARK",
+    "titleProject": "Bac Ninh I",
+    "explore": "Explore",
+    "exploreNow": "Explore Now",
+    "exploreLong": "Explore Now",
+    "cardTitle": "Investment environment in Bac Ninh.",
+    "cardLine1": "Investment environment",
+    "cardLine2": "Bac Ninh",
+    "carouselLabel": "industrialzoneezparkbacninh",
+    "exploreLegacy": "Explore Now",
     "energy": {
       "title": "Clean Energy",
       "description1": "Clean energy helps industrial zones",

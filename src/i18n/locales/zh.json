@@ -11,15 +11,11 @@
       "contact": "联系我们"
     },
     "menu": {
-      "aboutEzPark": "关于 EZ.PARK",
-      "aboutIntro": "总体介绍",
-      "investorPartners": "投资伙伴",
-      "industrialProjects": "工业区项目",
-      "projectBacNinh": "EZ.PARK 北宁 I",
-      "projectHaTinh": "EZ.PARK 河静 I",
-      "projectDakLak": "EZ.PARK 得乐 I",
-      "milestones": "铸就 EZ.PARK 的里程碑",
-      "contact": "联系我们"
+      "overview": "项目概览",
+      "masterPlan": "总平面图",
+      "advantages": "差异化优势",
+      "investorProcess": "投资流程",
+      "investmentEnv": "投资环境"
     },
     "languages": {
       "vi": "越南语",

@@ -11,15 +11,11 @@
       "contact": "Liên hệ"
     },
     "menu": {
-      "aboutEzPark": "VỀ EZ.PARK",
-      "aboutIntro": "Giới thiệu chung",
-      "investorPartners": "Chủ đầu tư",
-      "industrialProjects": "Dự Án Khu Công Nghiệp",
-      "projectBacNinh": "EZ.PARK Bắc Ninh I",
-      "projectHaTinh": "EZ.PARK Hà Tĩnh I",
-      "projectDakLak": "EZ.PARK Đắk Lắk I",
-      "milestones": "Dấu ấn tạo nên EZ.PARK",
-      "contact": "Liên hệ"
+      "overview": "Tổng quan dự án",
+      "masterPlan": "Mặt bằng tổng thể",
+      "advantages": "Lợi thế khác biệt",
+      "investorProcess": "Quy trình đầu tư",
+      "investmentEnv": "Môi trường đầu tư"
     },
     "languages": {
       "vi": "Tiếng Việt",
@@ -32,15 +28,24 @@
   },
   "hero": {
     "ecosystem": "HỆ SINH THÁI",
+    "subtitle": "khu công nghiệp",
     "subtitle1": "Khu công nghiệp",
     "subtitle2": "& Hạ tầng phát triển bền vững",
+    "titleBrand": "EZ.PARK",
+    "titleProject": "Bắc Ninh I",
+    "explore": "Khám phá",
+    "exploreNow": "Khám phá ngay",
+    "cardTitle": "Môi trường đầu tư tại Bắc Ninh.",
+    "cardLine1": "Môi trường đầu tư",
+    "cardLine2": "Bắc Ninh",
+    "carouselLabel": "khucongnghiepezparkbacninh",
     "slogan": {
       "think": "THINK",
       "easy": "EASY",
       "do": "DO",
       "better": "BETTER"
     },
-    "explore": "Khám phá ngay",
+    "exploreLong": "Khám phá ngay",
     "energy": {
       "title": "Năng lượng sạch",
       "description1": "Năng lượng sạch giúp khu công nghiệp",

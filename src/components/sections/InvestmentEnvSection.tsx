@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 export default function InvestmentEnvSection() {
   return (
-    <section className="bg-black text-white py-20 border-t border-gray-800">
+    <section id="section-investment-env" className="bg-black text-white py-20 border-t border-gray-800">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-8">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12">
           <h2 className="text-4xl font-bold text-gray-500">

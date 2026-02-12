@@ -11,15 +11,11 @@
       "contact": "お問い合わせ"
     },
     "menu": {
-      "aboutEzPark": "EZ.PARKについて",
-      "aboutIntro": "概要",
-      "investorPartners": "投資パートナー",
-      "industrialProjects": "工業団地プロジェクト",
-      "projectBacNinh": "EZ.PARK バクニン I",
-      "projectHaTinh": "EZ.PARK ハティン I",
-      "projectDakLak": "EZ.PARK ダクラク I",
-      "milestones": "EZ.Parkを形づくる歩み",
-      "contact": "お問い合わせ"
+      "overview": "プロジェクト概要",
+      "masterPlan": "全体配置",
+      "advantages": "差別化優位性",
+      "investorProcess": "投資プロセス",
+      "investmentEnv": "投資環境"
     },
     "languages": {
       "vi": "ベトナム語",

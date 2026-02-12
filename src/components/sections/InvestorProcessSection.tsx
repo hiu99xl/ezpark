@@ -18,7 +18,7 @@ const STEPS = [
 
 export default function InvestorProcessSection() {
   return (
-    <section className="relative bg-black text-white py-24 overflow-hidden">
+    <section id="section-investor-process" className="relative bg-black text-white py-24 overflow-hidden">
       <div className="absolute inset-0 z-0">
         <Image
           src="/images/sections/investor_bg.png"

@@ -2,10 +2,11 @@
 
 import React, { useEffect, useRef, useState } from 'react';
 import { cn } from '@/lib/utils';
-import { Link, usePathname } from '@/i18n/navigation';
+import { Link } from '@/i18n/navigation';
 import Image from 'next/image';
-import { IndustrialZonesDropdown, MenuButton, MenuPosition } from './common';
+import { MenuButton, MenuPosition } from './common';
 import LanguageSwitcher from './common/LanguageSwitcher';
+import { HeaderTaglineLogoSvg, HeaderExpandIconSvg } from './svg';
 import { MOBILE_BREAKPOINT } from '@/constants/responsive';
 import { HEADER_HORIZONTAL_PADDING } from '@/constants/layout';
 import { useMediaQuery } from 'react-responsive';
@@ -32,6 +33,14 @@ type HeaderProps = {
 const MODE_DEFAULT = 'default';
 const MODE_LIGHT = 'light';
 
+const MENU_SECTIONS: { id: string; key: 'overview' | 'masterPlan' | 'advantages' | 'investorProcess' | 'investmentEnv' }[] = [
+  { id: 'section-overview', key: 'overview' },
+  { id: 'section-master-plan', key: 'masterPlan' },
+  { id: 'section-advantages', key: 'advantages' },
+  { id: 'section-investor-process', key: 'investorProcess' },
+  { id: 'section-investment-env', key: 'investmentEnv' },
+];
+
 /* Component */
 const Header = ({
   mode = MODE_DEFAULT,
@@ -41,11 +50,6 @@ const Header = ({
   // Validate mode
   const isLight = mode === MODE_LIGHT;
   
-  const t = useTranslations();
-  const rawPathname = usePathname()
-  const pathname = typeof rawPathname === 'string'
-    ? (rawPathname.replace(/^\/(vi|en|kr|zh|ja)/, '') || '/') as string
-    : rawPathname
   const [isMounted, setIsMounted] = useState(false)
   const [isScrollTop, setIsScrollTop] = useState(false)
   const [isScrollDown, setIsScrollDown] = useState(false)
@@ -76,16 +80,13 @@ const Header = ({
     return () => window.removeEventListener('scroll', handleScroll)
   }, []);
 
-  const linkClassBase = cn(
-    "group h-fit w-fit inline-flex items-center justify-center border border-transparent transition-all duration-300 font-normal",
-    "hover:bg-white/25 hover:border-primary hover:text-primary hover:backdrop-blur-ms",
-    "lg:rounded-[clamp(17.1px,1.67vw,64px)] lg:pt-[clamp(2.1px,0.21vw,8px)] lg:pb-[clamp(2.7px,0.26vw,10px)] lg:px-[clamp(8.5px,0.83vw,32px)] lg:text-[clamp(11.7px,1.15vw,44px)]",
-  );
+  const tMenu = useTranslations('header.menu');
 
-  const linkClassActive = "bg-primary text-white";
-  const linkClassInactive = cn(
-    isLight ? "text-black" : "text-white",
-  );
+  const scrollToSection = (sectionId: string) => (e: React.MouseEvent) => {
+    e.preventDefault();
+    const el = document.getElementById(sectionId);
+    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  };
 
   const menuClassScrollTop = cn(
     "lg:pt-[clamp(6.4px,0.63vw,24px)] lg:pb-[clamp(6.9px,0.68vw,26px)] pb-[clamp(9px,2.8vw,22px)] backdrop-blur-sm border-b border-white/45 shadow-[0_0_10px_2px_rgba(255, 255, 255, 0.5)]",
@@ -97,8 +98,9 @@ const Header = ({
     <header
       data-scroll-down={isScrollDown}
       className={cn(
+        'flex',
         'fixed top-0 z-100',
-        'grid grid-cols-3 lg:grid-cols-24 pb-0 grid-items-center w-full',
+        'pb-0 grid-items-center w-full',
         'transition-[transform,background-color,padding] duration-300 ease-out',
         'pt-[clamp(12px,4vw,31px)]',
         HEADER_HORIZONTAL_PADDING,
@@ -109,29 +111,50 @@ const Header = ({
         isScrollTop && menuClassScrollTop
       )}
     >
-      {/* LOGO */}
-      <Link
-        href={logoConfig?.link ?? '/'}
+      {/* LOGO + TAGLINE */}
+      <div
         className={cn(
           'col-span-1 lg:col-span-7',
           'flex justify-start items-center',
-          logoConfig?.classWrapper ?? '',
-        )}  
+          'lg:ml-0',
+        )}
       >
-        <Image
-          src={logoConfig?.src ?? '/images/home/logo.svg'}
-          alt="Ez.Park Logo"
-          width={181}
-          height={54}
+        <Link
+          href={logoConfig?.link ?? '/'}
+          className={cn('flex items-center', logoConfig?.classWrapper ?? '')}
+        >
+          <Image
+            src={logoConfig?.src ?? '/images/home/logo.svg'}
+            alt="Ez.Park Logo"
+            width={181}
+            height={54}
+            className={cn(
+              'w-[clamp(95px,9.3vw,356px)] h-auto object-contain',
+              logoConfig?.classImage ?? '',
+            )}
+          />
+        </Link>
+        <span
           className={cn(
-            'w-[clamp(62px,20.8vw,160px)] lg:w-[clamp(117.3px,11.46vw,440px)] h-auto object-contain',
-            logoConfig?.classImage ?? '',
+            'hidden lg:inline-flex items-center shrink-0',
+            isLight ? 'text-black' : 'text-white',
+            'ml-[clamp(57.6px,5.625vw,216px)]',
           )}
-        />
-      </Link>
+        >
+          <HeaderTaglineLogoSvg className="w-[clamp(67.2px,6.5625vw,252px)]" />
+        </span>
+        <span
+          className={cn(
+            'hidden lg:inline-flex items-center shrink-0',
+            isLight ? 'text-black' : 'text-white',
+            'ml-[clamp(80px,7.8125vw,300px)] mr-[clamp(80px,7.8125vw,300px)]',
+          )}
+        >
+          <HeaderExpandIconSvg className="w-[30px] h-[30px]" />
+        </span>
+      </div>
       {/* NAV BAR */}
       <div id="nav-bar" className={cn(
-        'col-span-1 lg:col-span-14',
         'flex justify-center items-center',
       )}>
         {/* MOBILE MENU BUTTON */}
@@ -147,34 +170,42 @@ const Header = ({
             }
           }}
         />
-        {/* DESKTOP NAV BAR */}
+        {/* DESKTOP NAV BAR: white bg 29%, padding 17/19/36px, rounded 8px; gap 40px; text white; active: black text, bg white 49%, padding 11/14/34px */}
         <nav
           className={cn(
-            "hidden lg:flex tracking-wide gap-[clamp(6.4px,0.63vw,24px)]",
+            'hidden lg:flex items-center justify-center gap-[40px]',
+            'bg-white/[0.29] backdrop-blur-md rounded-[8px]',
+            'py-[4px] pl-[6px] pr-[6px]',
+            'tracking-wide',
           )}
         >
-          <Link href="/" className={cn(
-            pathname === '/' ? linkClassActive : linkClassInactive,
-            linkClassBase
-          )}>
-            <span className="inline-block relative">
-              <span className="font-bold invisible text-nowrap" aria-hidden="true">{t('header.nav.about')}</span>
-              <span className="absolute left-0 top-0 whitespace-nowrap group-hover:font-bold">{t('header.nav.about')}</span>
-            </span>
-          </Link>
-          <IndustrialZonesDropdown linkClassName={cn(
-            linkClassInactive,
-            linkClassBase
-          )} isLight={isLight} />
+          {MENU_SECTIONS.map(({ id, key }) => {
+            const isActive = id === 'section-overview'
+            return (
+              <button
+                key={id}
+                type="button"
+                onClick={scrollToSection(`#${id}`)}
+                className={cn(
+                  'text-[clamp(8.53px,0.83vw,32px)] font-medium whitespace-nowrap transition-colors',
+                  isActive
+                    ? 'text-black bg-white/[0.49] pt-[11px] pb-[14px] px-[34px] rounded-[8px]'
+                    : 'text-white hover:text-white/90',
+                )}
+              >
+                {tMenu(key)}
+              </button>
+            )
+          })}
         </nav>
       </div>
       {/* LANGUAGE SWITCHER */}
-      <div className={cn(
+      {/* <div className={cn(
         'col-span-1 lg:col-span-3',
         'flex justify-end items-center',
       )}>
         <LanguageSwitcher linkClassName={isLight ? "text-black border-black/35 [&>svg]:fill-black/50" : "text-white"} isLight showLabel={!isMobile} />
-      </div>
+      </div> */}
     </header>
   );
 };

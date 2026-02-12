@@ -1,263 +1,193 @@
 'use client'
 
 import Image from 'next/image'
-import { useState, useEffect } from 'react';
-import { useMediaQuery } from 'react-responsive';
-import { useTranslations } from 'next-intl';
-import { MOBILE_BREAKPOINT } from '@/constants/responsive';
-import { Arrow45LeftSvg } from '@/components/svg';
-import ThinkEasyDoBetter from '@/components/ThinkEasyDoBetter';
-import type { HomePageData } from '@/types/api';
-import { MenuButton } from './common';
-import { cn } from '@/lib/utils';
+import { Link } from '@/i18n/navigation'
+import { useTranslations } from 'next-intl'
+import ThinkEasyDoBetter from '@/components/ThinkEasyDoBetter'
+import { ArrowRightSvg } from '@/components/svg'
+import { cn } from '@/lib/utils'
 
 type HeroSectionProps = {
-  pageData?: HomePageData | null;
-};
+  pageData?: unknown
+}
 
 export default function HeroSection({ pageData }: HeroSectionProps) {
-  const t = useTranslations();
-  const [isMounted, setIsMounted] = useState(false);
-  const isMobile = useMediaQuery(MOBILE_BREAKPOINT);
-
-  // Temporarily use static images only (ignore API image)
-  const heroImageUrl: string | null = null;
-  const heroImageAlt = t('hero.slogan.easy');
-
-  // Đảm bảo component đã mount ở client để tránh hydration error
-  useEffect(() => {
-    setIsMounted(true);
-  }, []);
+  const t = useTranslations('hero')
 
   return (
     <section
-      className={`
-        relative w-full overflow-hidden
-        aspect-[500/933] px-[clamp(15px,4vw,30.72px)] pt-[clamp(123.9px,calc(33.05vw-0.01px),253.8px)]
-        lg:aspect-[1920/1061] lg:pt-[clamp(113px,11vw,423px)] lg:px-0 lg:pl-[clamp(94.45px,9.224vw,354.2px)] lg:pr-[clamp(61px,5.94vw,228px)]
-      `}
+      className={cn(
+        'relative w-full overflow-hidden',
+        'min-h-[100dvh] min-h-[100vh]',
+        'flex flex-col',
+      )}
     >
-      {/* Background Image */}
-      <div className="absolute inset-0">
-        {heroImageUrl ? (
-          <>
-            <Image
-              src={heroImageUrl}
-              alt={heroImageAlt}
-              fill
-              className="object-cover lg:block hidden"
-              sizes="100vw"
-              priority
-              unoptimized
-            />
-            <Image
-              src={heroImageUrl}
-              alt={heroImageAlt}
-              fill
-              className="object-contain lg:hidden block cover-center cover-top"
-              sizes="100vw"
-              priority
-              unoptimized
-            />
-          </>
-        ) : (
-          <Image
-            src="/images/home/bg_bn.png"
-            alt="Background"
-            fill
-            className="object-cover"
-            sizes="100vw"
-            priority
-          />
-        )}
-      </div>
-      <div className="absolute inset-0 bg-black/10 pointer-events-none z-10"></div>
-
-      {/* Desktop Frame Bottom Left */}
-      <div className="absolute bottom-0 left-0 w-1/5 h-[clamp(16px,1.56vw,60px)] pointer-events-none z-20 hidden lg:block">
-        <svg
-          viewBox="0 0 100 34"
-          className="w-full h-full"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          preserveAspectRatio="none"
-        >
-          <polygon points="0,50 100,50 80,0 0,0" fill="white" />
-        </svg>
-      </div>
-      {/* Mobile Frame Bottom Left */}
-      <div className="absolute bottom-0 left-0 w-[38%] h-[clamp(20px,5.089vw+0.92px,40px)] pointer-events-none z-10 lg:hidden">
-        <svg
-          viewBox="0 0 100 34"
-          className="w-full h-full"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          preserveAspectRatio="none"
-        >
-          <polygon points="0,50 100,50 80,0 0,0" fill="white" />
-        </svg>
+      {/* Background */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="/images/home/bg_bn.png"
+          alt=""
+          fill
+          className="object-cover"
+          sizes="100vw"
+          priority
+        />
+        <div
+          className="absolute inset-0 z-[1]"
+        />
       </div>
 
-      {/* Section Content: Heading + Description */}
-      <div
-        className="
-          relative grid z-40
-          grid-cols-1 gap-[clamp(48.04px,calc(12.81vw-0.01px),98.39px)] mb-[clamp(26px,3.4vw,13px)]
-          lg:grid-cols-2 lg:gap-0 lg:mb-[clamp(36.5px,3.56vw,137px)]
-        "
-      >
-        {/* Action Menu: HỆ SINH THÁI */}
-        <div className="text-white group transition-all duration-300 w-fit hover:cursor-pointer flex flex-col lg:pl-[clamp(30px,2.96vw,114px)]">
-          <div
-            className="
-              flex flex-col lg:flex-row
-              items-start
-              lg:mb-[clamp(10px,1.02vw,39px)] 
-            "
-          >
-            {/* <MenuButton className="hidden lg:absolute lg:left-[clamp(2px,0.21vw,8px)] lg:block lg:mt-[clamp(13px,1.25vw,48px)]"/> */}
-            <h2
-              className="
-                relative font-[800] uppercase tracking-wide transition-all duration-300 
-                text-[clamp(19.5px,5.2vw,39.936px)] leading-[1.6]
-                lg:text-[clamp(34px,3.3vw,127px)] lg:leading-[1.26]
-              "
-            >
-              <span className="group-hover:invisible invisible" aria-hidden="true">
-                {t('hero.ecosystem')}
-              </span>
-              <span className="absolute left-0 top-0 whitespace-nowrap group-hover:font-[900] group-hover:visible visible">
-                {t('hero.ecosystem')}
-              </span>
-            </h2>
-          </div>
-          <div className="flex items-start flex-col pl-0">
-            <p
-              className="
-                font-light transition-all duration-300 
-                text-[clamp(10.5px,calc(2.82vw-0.1px),21.6px)] leading-[1.48]
-                lg:text-[clamp(19px,1.87vw,72px)] lg:leading-[1.1]
-              "
-            >
-              {t('hero.subtitle1')}
-            </p>
-            <p
-              className="
-                font-light transition-all duration-300
-                text-[clamp(10.5px,calc(2.82vw-0.1px),21.6px)] leading-[1.48]
-                lg:text-[clamp(19px,1.87vw,72px)] lg:leading-[1.1]
-              "
-            >
-              {t('hero.subtitle2')}
-            </p>
-          </div>
-        </div>
-
-        {/* Slogan: THINK EASY DO BETTER - same as Vision */}
-        <div className="text-white text-right flex flex-col items-end relative z-20 m-auto lg:m-0 gap-[clamp(22px,5.9vw,45px)] lg:gap-[clamp(33px,3.25vw,125px)]">
-          <ThinkEasyDoBetter />
-          <button 
-            className="
-              relative z-20 inline-flex items-center  bg-white text-black border border-white rounded-full hover:border-primary hover:bg-primary hover:text-white transition-all duration-300 cursor-pointer group
-              gap-[clamp(21px,1.132vw+16.76px,24px)] p-[clamp(4px,1.5094vw-1.66px,8px)] pl-[clamp(15.2px,6.3396vw-8.57px,32px)]
-              lg:p-[clamp(4.5px,0.44vw,17px)] lg:pl-[clamp(15px,1.49vw,57px)] lg:gap-[clamp(9.75px,0.95vw,36.5px)]
-            "
-            suppressHydrationWarning
-          >
-            <span className="
-              tracking-wider leading-none
-              text-[clamp(10.5px,2.8vw,17.92px)] mb-[0.1rem]
-              lg:text-[clamp(9px,0.86vw,33px)] lg:mb-[0.15rem]
-            ">
-              {t('hero.explore')}
-            </span>
-            <div
-              className="
-              bg-primary group-hover:bg-white rounded-full flex items-center justify-center transition-all duration-300 ease-out 
-                w-[clamp(28.5px,7.6vw,48.64px)] h-[clamp(28.5px,7.6vw,48.64px)] p-[clamp(8px,2.6415vw-1.91px,15px)]
-                lg:w-[clamp(25px,2.45vw,94px)] lg:h-[clamp(25px,2.45vw,94px)] lg:p-[clamp(8px,0.73vw,28px)]
-              "
-            >
-              <Arrow45LeftSvg className="w-full h-full" />
+      <div className="relative z-10 flex-1 flex flex-col justify-start pt-[clamp(100px,18vw,280px)] pb-[clamp(80px,12vw,180px)] px-[clamp(20px,4vw,60px)] lg:px-[clamp(94px,9.2vw,354px)]">
+        <div className="flex flex-col gap-8 w-full max-w-[1600px]">
+          <div className="flex flex-col w-full items-end">
+            <div className="flex items-center gap-3 mt-2 flex-wrap">
+              {/* khu công nghiệp trên, EZ.PARK + border dưới – dịch lên bằng transform */}
+              <div className="flex flex-col leading-none -translate-y-8 translate-x-16">
+                <p className="text-[clamp(25.6px,2.5vw,96px)] text-white/90 font-light tracking-wide leading-none">
+                  {t('subtitle')}
+                </p>
+                <div className="w-fit -mt-1">
+                  <h1 className="text-white font-medium text-[clamp(42.67px,4.17vw,160px)] tracking-tight uppercase leading-tight">
+                    {t('titleBrand')}
+                  </h1>
+                  <div className="relative w-full h-4 mt-1">
+                    <span className="absolute left-0 top-1/2 -translate-y-1/2 h-[3px] right-0 bg-white" aria-hidden />
+                    <span className="absolute left-0 top-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-white z-10" aria-hidden />
+                  </div>
+                </div>
+              </div>
+              <div className="flex items-center gap-2">
+                <h2 className="text-white font-semibold text-[clamp(80px,7.8125vw,300px)] tracking-tight">
+                  {t('titleProject')}
+                </h2>
+                <span className="w-3 h-3 bg-primary shrink-0" />
+              </div>
             </div>
-          </button>
+          </div>
+
+          <div className="flex flex-col items-start lg:items-end gap-6">
+            <div className="inline-flex items-stretch gap-[6px]">
+              <Link
+                href="#section-overview"
+                className={cn(
+                  'inline-flex items-center justify-center bg-white text-gray-700 font-semibold rounded-[8px]',
+                  'w-[clamp(102.4px,10vw,384px)] py-3 hover:bg-white/95 transition-colors',
+                  'text-[clamp(14px,1vw,18px)]',
+                )}
+              >
+                {t('explore')}
+              </Link>
+              <Link
+                href="#section-overview"
+                className="w-[clamp(34.13px,3.33vw,128px)] flex items-center justify-center bg-white hover:bg-white/95 transition-colors text-gray-900 shrink-0 rounded-[8px]"
+                aria-label={t('explore')}
+              >
+                <ArrowRightSvg className="w-5 h-5 text-gray-900" />
+              </Link>
+            </div>
+            {/* Social: below CTA, slightly to the left */}
+            <div className="flex items-center gap-4 lg:-ml-4">
+              <a
+                href="https://www.linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center text-white text-sm font-bold hover:bg-gray-600 transition-colors"
+                aria-label="LinkedIn"
+              >
+                in
+              </a>
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center text-white text-sm font-bold hover:bg-gray-600 transition-colors"
+                aria-label="Facebook"
+              >
+                f
+              </a>
+              <a
+                href="mailto:contact@ezpark.vn"
+                className="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center text-white hover:bg-gray-600 transition-colors"
+                aria-label="Email"
+              >
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
 
-      {/* Section Content: Energy + Mission */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 items-center pl-0 relative z-10 gap-[clamp(7px,1.8vw,14px)] lg:gap-0">
-        {/* Energy */}
+      {/* Line: from ThinkEasyDoBetter (left) to end of carousel label (right) + 2 dots */}
+      <div className="absolute bottom-8 left-0 right-0 z-10">
+        {/* Line segment from left to start of carousel label */}
         <div
-          className="
-            animate-card-reveal bg-white/20 backdrop-blur-[0.5px] border border-white/25 flex flex-col justify-self-start hover:cursor-pointer hover:shadow-[0_0_12px_0px_rgba(239,86,40,0.5)] transition duration-300 ease-in-out
-            p-[clamp(14px,3.8vw,29px)] pr-[clamp(54px,14.4vw,110.5px)] rounded-3xl
-            lg:pl-[clamp(20.8px,2.03vw,78px)] lg:py-[clamp(18px,1.75vw,67px)] lg:pr-[clamp(56.6px,5.53vw,212px)] lg:rounded-4xl
-          "
-          style={{ transformOrigin: 'center center' }}
-        >
-          <div
-            className="
-              flex items-center bg-white rounded-xl justify-center
-              h-[clamp(27px,7.2vw,55px)] w-[clamp(27px,7.2vw,55px)] mb-[clamp(18px,4.8vw,37px)]
-              lg:w-[clamp(35px,3.44vw,132px)] lg:h-[clamp(35px,3.44vw,132px)] lg:mb-[clamp(22.28px,2.18vw,33.43px)]
-              2xl:mb-[clamp(52px,3.39vw,130px)]
-            "
-          >
-            <Image
-              src="/images/home/hero_energy.svg"
-              className="w-[clamp(9px,2.4vw,18px)] h-[clamp(9px,2.4vw,18px)] lg:w-[clamp(10.7px,1.04vw,40px)] lg:h-[clamp(10.7px,1.04vw,40px)]"
-              alt="Icon"
-              width={24}
-              height={24} 
-            />
-          </div>
-          <p className="text-white/80 text-[clamp(8px,2vw,15px)] lg:text-[clamp(11.1px,1.09vw,16.7px)] 2xl:text-[clamp(12.8px,0.83vw,32px)] leading-relaxed lg:leading-tight text-nowrap">
-            {t('hero.energy.description1')}
-            <br />
-            {t('hero.energy.description2')}
-          </p>
-          <p className="text-white/80 text-[clamp(8px,2vw,15px)] lg:text-[clamp(11.1px,1.09vw,16.7px)] 2xl:text-[clamp(12.8px,0.83vw,32px)] lg:mt-[clamp(8.5px,0.83vw,32px)] lg:mb-[clamp(7.27px,0.7093vw,27.24px)] lg:block hidden leading-relaxed lg:leading-tight text-nowrap">
-            {t('hero.energy.description3')}
-            <br />
-            {t('hero.energy.description4')}
-          </p>
-          <div className="flex items-center gap-[clamp(6px,1.6vw,12px)] lg:gap-[clamp(8px,0.78vw,30px)]">
-            <p className="text-white text-[clamp(15px,4vw,31px)] lg:text-[clamp(18.9px,1.85vw,71px)] font-bold text-nowrap">{t('hero.energy.title')}</p>
-            <Image
-              src="/images/home/hero_electric_mb.svg"
-              className="
-                w-[clamp(15px,4vw,31px)] h-[clamp(15px,4vw,31px)] translate-y-[clamp(12px,3.2vw,25px)] lg:hidden
-              "
-              alt="Icon"
-              width={20}
-              height={20}
-            />
-            <Image
-              src="/images/home/hero_electric.svg"
-              className="
-                w-[clamp(15.5px,1.51vw,58px)] h-[clamp(15.5px,1.51vw,58px)] translate-y-[clamp(1px,0.1vw,4px)] lg:block hidden
-              "
-              alt="Icon"
-              width={20}
-              height={20}
-            />
-          </div>
+          className="absolute bottom-0 left-[clamp(20px,4vw,60px)] lg:left-[clamp(94px,9.2vw,354px)] right-1/2 h-[2.5px] bg-white"
+          aria-hidden="true"
+        />
+        <div className="absolute bottom-[32.5px] left-[clamp(20px,4vw,60px)] lg:left-[clamp(94px,9.2vw,354px)] text-white">
+          <ThinkEasyDoBetter />
         </div>
-        {/* Mission */}
-        <div
-          className="
-            animate-card-reveal bg-white/20 backdrop-blur-[0.5px] border border-white/25 rounded-3xl lg:rounded-4xl justify-self-end text-left hover:cursor-pointer hover:shadow-[0_0_12px_0px_rgba(239,86,40,0.5)] transition duration-300 ease-in-out
-            p-[clamp(14px,3.8vw,29px)] lg:py-[clamp(16.1px,1.57vw,60.5px)] lg:px-[clamp(16.75px,1.64vw,63px)]
-          "
-          style={{ transformOrigin: 'center center' }}
-        >
-          <p className="text-white text-[clamp(16px,4.3vw,33px)] lg:text-[clamp(17.6px,1.72vw,66px)] lg:mb-[clamp(4.4px,0.43vw,16.7px)] font-bold">{t('hero.mission.title')}</p>
-          <p className="text-white/80 text-[clamp(8px,2vw,15px)] lg:text-[clamp(11.1px,1.09vw,16.7px)] 2xl:text-[clamp(12.8px,0.83vw,32px)] leading-relaxed lg:leading-tight">
-            {t('hero.mission.description')}
-            <br />
-            {t('hero.mission.description2')}
-          </p>
+      </div>
+
+      {/* Bottom center: carousel label + line (line matches label width exactly) */}
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-3">
+        <span className="text-[10px] sm:text-xs text-white/60 tracking-widest uppercase">
+          {t('carouselLabel')}
+        </span>
+        <div className="w-full h-[2.5px] bg-white relative" aria-hidden="true">
+          {/* Two 16px dots: outside line on the right, 16px from line, 8px apart */}
+          <span
+            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-8 w-4 h-4 rounded-full bg-white shrink-0 pointer-events-none"
+            aria-hidden="true"
+          />
+          <span
+            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-14 w-4 h-4 rounded-full bg-white shrink-0 pointer-events-none"
+            aria-hidden="true"
+          />
         </div>
+      </div>
+
+      {/* Bottom right: card – white bg, dark grey text, CTA = white btn + dark grey arrow btn */}
+      <div className="absolute bottom-8 right-[clamp(20px,4vw,60px)] lg:right-[clamp(61px,5.94vw,228px)] z-10 flex gap-4">
+        <Link
+          href="#section-investment-env"
+          className={cn(
+            'flex items-stretch w-[clamp(241.07px,23.54vw,904px)] rounded-xl overflow-hidden',
+            'bg-white/30 shadow-lg',
+            'hover:shadow-xl transition-shadow',
+          )}
+        >
+          <div className="w-[clamp(89.6px,8.75vw,336px)] h-[clamp(89.6px,8.75vw,336px)] shrink-0 relative rounded-[30px] overflow-hidden py-[5px] pl-[8px] box-border flex flex-col">
+            <div className="relative flex-1 min-h-0">
+              <Image
+                src="/images/home/card_vision.png"
+                alt=""
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 89.6px, 336px"
+              />
+            </div>
+          </div>
+          <div className="flex-1 p-4 flex flex-col min-w-0">
+            <div className="flex-1 flex items-center min-h-0">
+              <p className="text-white text-2xl font-medium text-left w-full">
+                <span className="block">{t('cardLine1')}</span>
+                <span className="block">{t('cardLine2')}</span>
+              </p>
+            </div>
+            <div className="inline-flex items-stretch gap-[6px] mt-2 w-fit self-start">
+              <span className="inline-flex items-center justify-center w-[clamp(65.07px,6.35vw,244px)] py-1.5 rounded-[8px] bg-gray-100 text-gray-700 text-sm font-semibold">
+                {t('explore')}
+              </span>
+              <span className="w-[clamp(22.4px,2.19vw,84px)] flex items-center justify-center rounded-[8px] bg-white text-gray-900 shrink-0">
+                <ArrowRightSvg className="w-4 h-4 text-gray-900" />
+              </span>
+            </div>
+          </div>
+        </Link>
+        <div className="w-[clamp(80px,10vw,140px)] rounded-xl shrink-0 bg-white/80 shadow border border-white/50" />
       </div>
     </section>
   )
