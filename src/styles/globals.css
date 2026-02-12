@@ -1,0 +1,524 @@
+@import "tailwindcss";
+@source "../app";
+@source "../components";
+@import './responsive.css';
+@import './responsive-mobile.css';
+
+@theme {
+  --font-family-sans: var(--font-plus-jakarta-sans), 'Plus Jakarta Sans', sans-serif;
+  
+  --color-primary: #ef5628;
+  --color-secondary: #46a5a5;
+  --color-dark: #2b2b2b;
+  --color-light: #f5f5f5;
+  
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+
+  /* Legacy page: entrance animations (Tailwind-only, fast & smooth) */
+  --animate-fade-in: fade-in 0.35s ease-out forwards;
+  --animate-fade-in-up: fade-in-up 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  --animate-slide-in-left: slide-in-left 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  /* Slower variant for MapSection cards (0.8s) */
+  --animate-slide-in-left-slow: slide-in-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  --animate-slide-in-right: slide-in-right 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  --animate-fade-in-up-bounce: fade-in-up-bounce 0.45s cubic-bezier(0.34, 1.2, 0.64, 1) forwards;
+  --animate-scale-in: scale-in 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  --animate-pop-in: pop-in 0.45s cubic-bezier(0.34, 1.2, 0.64, 1) forwards;
+  /* Section scroll: zoom in then back to original size */
+  --animate-zoom-in-out: zoom-in-out 20s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+
+  @keyframes fade-in {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  @keyframes fade-in-up {
+    0% { opacity: 0; transform: translateY(12px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes slide-in-left {
+    0% { opacity: 0; transform: translateX(-20px); filter: blur(4px); }
+    100% { opacity: 1; transform: translateX(0); filter: blur(0); }
+  }
+  @keyframes slide-in-right {
+    0% { opacity: 0; transform: translateX(16px); filter: blur(4px); }
+    100% { opacity: 1; transform: translateX(0); filter: blur(0); }
+  }
+  @keyframes fade-in-up-bounce {
+    0% { opacity: 0; transform: translateY(14px); }
+    65% { opacity: 1; transform: translateY(-2px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes scale-in {
+    0% { opacity: 0; transform: scale(0.88); }
+    100% { opacity: 1; transform: scale(1); }
+  }
+  @keyframes pop-in {
+    0% { opacity: 0; transform: scale(0.88); }
+    65% { opacity: 1; transform: scale(1.02); }
+    100% { opacity: 1; transform: scale(1); }
+  }
+
+  /* Zoom in then out when section enters view (About ecosystem) */
+  @keyframes zoom-in-out {
+    0% { transform: scale(1); }
+    40% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
+
+  /* Menu animations */
+  @keyframes menu-slide-in {
+    0% { 
+      opacity: 0; 
+      transform: translateY(-15px) scale(0.95);
+    }
+    70% {
+      transform: translateY(1px) scale(1.005);
+    }
+    100% { 
+      opacity: 1; 
+      transform: translateY(0) scale(1);
+    }
+  }
+
+  @keyframes menu-item-slide-in {
+    0% { 
+      opacity: 0; 
+      transform: translateX(-8px);
+    }
+    100% { 
+      opacity: 1; 
+      transform: translateX(0);
+    }
+  }
+}
+
+/* ================================ Menu Animations ================================ */
+.menu-container-animate {
+  animation: menu-slide-in 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+.menu-column-1 {
+  opacity: 0;
+  animation: menu-item-slide-in 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  animation-delay: 0.25s;
+}
+
+.menu-column-2 {
+  opacity: 0;
+  animation: menu-item-slide-in 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  animation-delay: 0.4s;
+}
+
+.menu-column-3 {
+  opacity: 0;
+  animation: menu-item-slide-in 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  animation-delay: 0.55s;
+}
+
+/* Slower slide-in-left (MapSection cards) */
+.animate-slide-in-left-slow {
+  animation: slide-in-left 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+/* ================================ Smooth scroll (khi click link #anchor) ================================ */
+html, body { 
+  scroll-behavior: smooth;
+  font-family: var(--font-plus-jakarta-sans), 'Plus Jakarta Sans', sans-serif;
+}
+
+/* ================================ Header / Hero Section ================================ */
+/* Underline blur effect */
+.underline-blur { 
+  position: relative; 
+  text-decoration: none; 
+}
+.underline-blur::after {
+  content: ''; 
+  position: absolute; 
+  left: 0; 
+  right: 0; 
+  bottom: -0.5rem; 
+  height: 0.5rem;
+  background: white; 
+  opacity: 0.5;
+  z-index: -1;
+}
+
+/* ================================ Slogan: Write text (typewriter) animation ================================ */
+.animate-think-from-center {
+  display: inline-block;
+  animation: think-from-center 0.7s ease-out forwards;
+  opacity: 0;
+}
+@keyframes think-from-center {
+  from {
+    transform: translateX(-10vw);
+    filter: blur(8px);
+    opacity: 0.35;
+  }
+  to {
+    transform: translateX(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+.animate-think-from-right {
+  display: inline-block;
+  animation: think-from-right 0.7s ease-out forwards;
+  opacity: 0;
+}
+@keyframes think-from-right {
+  from {
+    transform: translateX(10vw);
+    filter: blur(8px);
+    opacity: 0.35;
+  }
+  to {
+    transform: translateX(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+/* ================================ Card reveal animation ================================ */
+.animate-card-reveal {
+  transform-origin: center center;
+  animation: card-reveal 1.5s ease-out forwards;
+  opacity: 0;
+}
+@keyframes card-reveal {
+  from {
+    transform: scale(0.4);
+    filter: blur(10px);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+/* ================================ Header: lớp phủ mờ khi scroll, hòa với màn hình (không viền dưới) ================================ */
+.header-scrolled {
+  padding: 1rem 2rem !important;
+  padding-bottom: 1rem !important;
+  border: none;
+  box-shadow: none;
+  overflow: visible;
+}
+.header-scrolled::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.9) calc(100% - 0.5rem), transparent 100%);
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.9) calc(100% - 0.5rem), transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.9) calc(100% - 0.5rem), transparent 100%);
+}
+
+/* ================================ Statistics Section ================================ */
+/* Swiper Carousel Styles - Partners Section */
+.partners-container {
+  overflow: visible !important;
+}
+
+.partners-swiper {
+  overflow: visible !important;
+  padding: 20px 0 !important;
+}
+
+.partners-swiper .swiper-wrapper {
+  overflow: visible !important;
+}
+
+.partners-swiper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px !important;
+  min-height: 100px !important;
+  overflow: visible !important;
+  box-sizing: border-box;
+}
+
+.partner-slide-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px !important;
+  overflow: visible !important;
+  box-sizing: border-box;
+}
+
+.partner-image-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: visible !important;
+  box-sizing: border-box;
+}
+
+.partner-logo {
+  width: auto !important;
+  height: auto !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  display: block !important;
+}
+
+/* Marquee logos: force size to container so no overlap on mobile */
+.partners-marquee-track .partner-logo {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  object-fit: contain !important;
+  object-position: center !important;
+}
+
+/* Partners marquee: infinite horizontal scroll (seamless loop, GPU-accelerated) */
+@keyframes partners-marquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.partners-marquee-track {
+  animation: partners-marquee 40s linear infinite;
+  will-change: transform;
+  backface-visibility: hidden;
+  contain: layout;
+  max-width: unset;
+}
+
+/* Mobile: smaller logo width so they don't overlap */
+@media (max-width: 639px) {
+  .partners-marquee-track {
+    animation-duration: 22s;
+  }
+  .partners-marquee-track > div {
+    gap: 12px !important;
+  }
+  .partners-marquee-track > div > div {
+    width: 120px !important;
+    min-width: 120px !important;
+    max-width: 120px !important;
+    height: 36px !important;
+    min-height: 36px !important;
+    margin-right: 0 !important;
+    flex-shrink: 0 !important;
+    box-sizing: border-box !important;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 1023px) {
+  .partners-marquee-track {
+    animation-duration: 22s;
+  }
+  .partners-marquee-track > div > div {
+    width: 120px !important;
+    min-width: 120px !important;
+    max-width: 120px !important;
+    height: 57px !important;
+    min-height: 57px !important;
+    margin-right: 24px !important;
+    flex-shrink: 0 !important;
+    box-sizing: border-box !important;
+  }
+}
+
+.partners-marquee-track:hover {
+  animation-play-state: paused;
+}
+
+/* Keyframes for horizontal movement (left to right) */
+@keyframes float-horizontal-1 {
+  0% {
+    transform: translateX(-200px) translateY(0);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translateX(calc(50vw - 200px)) translateY(-20px);
+    opacity: 0.75;
+  }
+  100% {
+    transform: translateX(calc(100vw + 200px)) translateY(0);
+    opacity: 0.5;
+  }
+}
+
+@keyframes float-horizontal-2 {
+  0% {
+    transform: translateX(-250px) translateY(0);
+    opacity: 0.55;
+  }
+  50% {
+    transform: translateX(calc(50vw - 250px)) translateY(30px);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateX(calc(100vw + 250px)) translateY(0);
+    opacity: 0.55;
+  }
+}
+
+@keyframes float-horizontal-3 {
+  0% {
+    transform: translateX(-220px) translateY(0);
+    opacity: 0.52;
+  }
+  50% {
+    transform: translateX(calc(50vw - 220px)) translateY(-15px);
+    opacity: 0.77;
+  }
+  100% {
+    transform: translateX(calc(100vw + 220px)) translateY(0);
+    opacity: 0.52;
+  }
+}
+
+/* Keyframes for horizontal movement (right to left) */
+@keyframes float-horizontal-reverse-1 {
+  0% {
+    transform: translateX(200px) translateY(0);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translateX(calc(-50vw + 200px)) translateY(25px);
+    opacity: 0.75;
+  }
+  100% {
+    transform: translateX(calc(-100vw - 200px)) translateY(0);
+    opacity: 0.5;
+  }
+}
+
+@keyframes float-horizontal-reverse-2 {
+  0% {
+    transform: translateX(250px) translateY(0);
+    opacity: 0.55;
+  }
+  50% {
+    transform: translateX(calc(-50vw + 250px)) translateY(-30px);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateX(calc(-100vw - 250px)) translateY(0);
+    opacity: 0.55;
+  }
+}
+
+@keyframes float-horizontal-reverse-3 {
+  0% {
+    transform: translateX(220px) translateY(0);
+    opacity: 0.52;
+  }
+  50% {
+    transform: translateX(calc(-50vw + 220px)) translateY(20px);
+    opacity: 0.77;
+  }
+  100% {
+    transform: translateX(calc(-100vw - 220px)) translateY(0);
+    opacity: 0.52;
+  }
+}
+
+/* Keyframes for vertical movement */
+@keyframes float-vertical-1 {
+  0% {
+    transform: translateY(-200px) translateX(0);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translateY(calc(50vh - 200px)) translateX(30px);
+    opacity: 0.75;
+  }
+  100% {
+    transform: translateY(calc(100vh + 200px)) translateX(0);
+    opacity: 0.5;
+  }
+}
+
+@keyframes float-vertical-2 {
+  0% {
+    transform: translateY(-230px) translateX(0);
+    opacity: 0.52;
+  }
+  50% {
+    transform: translateY(calc(50vh - 190px)) translateX(-25px);
+    opacity: 0.77;
+  }
+  100% {
+    transform: translateY(calc(100vh + 230px)) translateX(0);
+    opacity: 0.52;
+  }
+}
+
+/* ================================ Moving Clouds Animation ================================ */
+/* Animation cho mây chạy chậm (layer phía sau) */
+@keyframes cloud-slow {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Animation cho mây chạy tốc độ trung bình (layer giữa) */
+@keyframes cloud-medium {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Animation cho mây chạy nhanh (layer phía trước) */
+@keyframes cloud-fast {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Tailwind animation classes - trôi chậm, mượt (linear) */
+.animate-cloud-slow {
+  animation: cloud-slow 220s linear infinite;
+}
+
+.animate-cloud-medium {
+  animation: cloud-medium 150s linear infinite;
+}
+
+.animate-cloud-fast {
+  animation: cloud-fast 100s linear infinite;
+}
+
+/* Đậm–nhạt rất nhẹ (1 ↔ 0.8), chậm, không nhấp nháy */
+@keyframes cloud-fade {
+  0%, 100% { opacity: 0.88; }
+  33% { opacity: 1; }
+  66% { opacity: 0.82; }
+}
+.animate-cloud-fade {
+  animation: cloud-fade 48s ease-in-out infinite;
+}

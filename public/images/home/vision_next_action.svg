@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 139.67 8.02">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #c3fcf8;
+      }
+
+      .cls-2 {
+        opacity: .51;
+      }
+
+      .cls-2, .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        opacity: .65;
+      }
+
+      .cls-4 {
+        fill: #30858c;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g id="Top_page">
+      <g>
+        <g>
+          <rect class="cls-3" x="69.29" y="-7.65" width="7.55" height="23.22" transform="translate(77.02 -69.11) rotate(90)"/>
+          <rect class="cls-4" x="38.69" y="-7.65" width="7.55" height="23.22" transform="translate(46.43 -38.51) rotate(90)"/>
+          <rect class="cls-1" x="7.83" y="-7.65" width="7.55" height="23.22" transform="translate(15.57 -7.65) rotate(90)"/>
+        </g>
+        <circle class="cls-1" cx="97.01" cy="3.91" r="3.91"/>
+        <circle class="cls-2" cx="135.76" cy="4.11" r="3.91"/>
+      </g>
+    </g>
+  </g>
+</svg>

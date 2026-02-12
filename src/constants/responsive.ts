@@ -1,0 +1,14 @@
+const MOBILE_BREAKPOINT = {
+  maxWidth: 1023,
+}
+
+const TABLET_BREAKPOINT = {
+  minWidth: 768,
+  maxWidth: 1024,
+}
+
+const DESKTOP_BREAKPOINT = {
+  minWidth: 1024,
+}
+
+export { MOBILE_BREAKPOINT, TABLET_BREAKPOINT, DESKTOP_BREAKPOINT };

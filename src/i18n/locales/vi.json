@@ -1,0 +1,359 @@
+{
+  "header": {
+    "nav": {
+      "about": "Giới thiệu",
+      "aboutEzPark": "Về Ez.Park",
+      "industrialZones": "Dự án KCN",
+      "projectBacNinh": "Ez.Park Bắc Ninh I",
+      "projectHaTinh": "Ez.Park Hà Tĩnh I",
+      "projectDakLak": "Ez.Park Đắk Lắk I",
+      "milestones": "Dấu ấn tạo nên Ez.Park",
+      "contact": "Liên hệ"
+    },
+    "menu": {
+      "aboutEzPark": "VỀ EZ.PARK",
+      "aboutIntro": "Giới thiệu chung",
+      "investorPartners": "Chủ đầu tư",
+      "industrialProjects": "Dự Án Khu Công Nghiệp",
+      "projectBacNinh": "EZ.PARK Bắc Ninh I",
+      "projectHaTinh": "EZ.PARK Hà Tĩnh I",
+      "projectDakLak": "EZ.PARK Đắk Lắk I",
+      "milestones": "Dấu ấn tạo nên EZ.PARK",
+      "contact": "Liên hệ"
+    },
+    "languages": {
+      "vi": "Tiếng Việt",
+      "en": "Tiếng Anh",
+      "kr": "Tiếng Hàn",
+      "zh": "Tiếng Trung",
+      "ja": "Tiếng Nhật"
+    },
+    "selectLanguage": "Chọn ngôn ngữ"
+  },
+  "hero": {
+    "ecosystem": "HỆ SINH THÁI",
+    "subtitle1": "Khu công nghiệp",
+    "subtitle2": "& Hạ tầng phát triển bền vững",
+    "slogan": {
+      "think": "THINK",
+      "easy": "EASY",
+      "do": "DO",
+      "better": "BETTER"
+    },
+    "explore": "Khám phá ngay",
+    "energy": {
+      "title": "Năng lượng sạch",
+      "description1": "Năng lượng sạch giúp khu công nghiệp",
+      "description2": "giảm phát thải và hướng tới phát triển bền vững.",
+      "description3": "Giải pháp này nâng cao hiệu quả sản xuất và thân",
+      "description4": "thiện với môi trường."
+    },
+    "mission": {
+      "title": "Sứ mệnh",
+      "description": "Xây dựng một chuỗi các khu công nghiệp trên toàn quốc,",
+      "description2": "phát triển thành nhiều khu hơn nữa trong tương lai..."
+    }
+  },
+  "greenEnergy": {
+    "title1": "CÔNG NGHIỆP",
+    "title2": "NĂNG LƯỢNG XANH",
+    "title3": "BỀN VỮNG",
+    "subtitle": "Công nghiệp xanh - năng lượng xanh",
+    "description1": "Năng lượng sạch giúp khu công nghiệp giảm",
+    "description2": "phát thải và hướng tới phát triển bền vững.",
+    "description3": "Giải pháp này nâng cao hiệu quả sản xuất và",
+    "description4": "thân thiện với môi trường."
+  },
+  "statistics": {
+    "ezParkBacNinh": "Ez.Park Bắc Ninh I",
+    "ezParkHaTinh": "Ez.Park Hà Tĩnh I",
+    "ezParkDakLak": "Ez.Park Đắk Lắk I"
+  },
+  "about": {
+    "title": "Về chúng tôi",
+    "standardOf": "TIÊU CHUẨN CỦA",
+    "service": {
+      "label": "dịch vụ hạ tầng",
+      "title": "TOÀN DIỆN"
+    },
+    "community": {
+      "label": "cộng đồng doanh nghiệp",
+      "title": "LIÊN KẾT - ĐỒNG HÀNH"
+    },
+    "esg": {
+      "label": "định hướng theo",
+      "title": "TIÊU CHUẨN ESG"
+    },
+    "eco": {
+      "label": "hạ tầng xanh",
+      "title": "KINH TẾ TUẦN HOÀN"
+    }
+  },
+  "solutions": {
+    "title": "E TO Z SOLUTION",
+    "procedure": [
+      {
+        "label": "Thủ tục",
+        "title": "Nhanh gọn",
+        "description": [
+          "Hỗ trợ thủ tục pháp lý ĐƠN GIẢN – MINH BẠCH"
+        ]
+      },
+      {
+        "label": "Đồng hành",
+        "title": "Bền vững",
+        "description": [
+          "Hỗ trợ toàn diện PHÁP LÝ - XÂY DỰNG - VẬN HÀNH"
+        ]
+      },
+      {
+        "label": "Dịch vụ",
+        "title": "Linh hoạt",
+        "description": [
+          "Tiện ích hỗ trợ sản xuất NHÀ Ở - NHÂN LỰC - AN NINH"
+        ]
+      },
+      {
+        "label": "Thủ tục",
+        "title": "Nhanh gọn",
+        "description": [
+          "Hỗ trợ thủ tục pháp lý ĐƠN GIẢN – MINH BẠCH"
+        ]
+      },
+      {
+        "label": "Đồng hành",
+        "title": "Bền vững",
+        "description": [
+          "Hỗ trợ toàn diện PHÁP LÝ - XÂY DỰNG - VẬN HÀNH"
+        ]
+      }
+    ],
+    "cards": [
+      {
+        "companion": "Đồng hành",
+        "sustainable": "Bền vững",
+        "service": "Dịch vụ",
+        "flexible": "Linh hoạt"
+      },
+      {
+        "companion": "Dịch vụ",
+        "sustainable": "Linh hoạt",
+        "service": "Thủ tục",
+        "flexible": "Nhanh gọn"
+      },
+      {
+        "companion": "Thủ tục",
+        "sustainable": "Nhanh gọn",
+        "service": "Đồng hành",
+        "flexible": "Bền vững"
+      },
+      {
+        "companion": "Đồng hành",
+        "sustainable": "Bền vững",
+        "service": "Dịch vụ",
+        "flexible": "Linh hoạt"
+      },
+      {
+        "companion": "Dịch vụ",
+        "sustainable": "Linh hoạt",
+        "service": "Thủ tục",
+        "flexible": "Nhanh gọn"
+      }
+    ]
+  },
+  "news": {
+    "title": "TIN TỨC",
+    "article": {
+      "title": "Ez.Park tham dự Hội nghị Thượng đỉnh Đầu tư Sản xuất Việt Nam lần thứ IV (VNIC 2026)",
+      "hashtags": "#EZPARK #VNIC #BatDongSanCongNghiep",
+      "description": "Ez.Park tham dự Hội nghị Thượng đỉnh Đầu tư Sản xuất Việt Nam lần thứ IV do VNIC (Vietnam Investment Consulting) phối hợp cùng CMA tổ chức, diễn ra vào 06/01/2026 tại Hà Nội...",
+      "readMore": "Xem thêm"
+    }
+  },
+  "vision": {
+    "title": "TẦM NHÌN",
+    "subtitle": "HỆ SINH THÁI CÔNG NGHIỆP THEO CHUẨN QUỐC TẾ HÀNG ĐẦU VIỆT NAM",
+    "description": "Ez.Park hướng tới trở thành chuỗi KCN & dịch vụ hạ tầng hàng đầu Việt Nam, tiến tới hoàn thiện mô hình phát triển công nghiệp xanh, công nghiệp tuần hoàn, bền vững."
+  },
+  "mission": {
+    "title": "SỨ MỆNH",
+    "subtitle": "ĐỒNG HÀNH DOANH NGHIỆP XÂY DỰNG SẢN XUẤT XANH & BỀN VỮNG",
+    "description": "Ez.Park tiên phong kiến tạo hệ sinh thái KCN & dịch vụ hạ tầng công nghiệp, nơi sản xuất an toàn, gắn kết và hỗ trợ tuần hoàn cùng nhau phát triển."
+  },
+  "footer": {
+    "form": {
+      "title": "Đăng ký",
+      "title2": "nhận",
+      "title3": "Thông tin",
+      "name": "Tên",
+      "phone": "SĐT",
+      "email": "Email",
+      "field": "Lĩnh vực",
+      "message": "Lời nhắn",
+      "submit": "Gửi",
+      "sending": "Đang gửi...",
+      "success": "Đăng ký thành công.",
+      "errorGeneric": "Có lỗi xảy ra. Vui lòng thử lại."
+    },
+    "company": {
+      "name": "Ez.Park - Hệ sinh thái khu công nghiệp",
+      "developedBy": "Phát triển bởi Công ty cổ phần GS Holding",
+      "headquarters": "Trụ sở: Số 2 - Lô F1, KĐT Đại Kim, Đường Nguyễn Cảnh Dị, Phường Định Công, Tp. Hà Nội",
+      "contactAddress": "Địa chỉ liên hệ",
+      "businessOffice": "Văn phòng kinh doanh: Tòa Văn phòng The Diamond Tower",
+      "businessAddress": "Unit 602, số 459C Bạch Mai, phường Bạch Mai, TP. Hà Nội"
+    },
+    "copyright": "© Copyright 2025 GS Holding. All Rights Reserved",
+    "website": "www.gsholding.com.vn",
+    "designedBy": "Website designed by GS GLOBAL"
+  },
+  "contactHero": {
+    "subtitlePrefix": "Khu công nghiệp định hướng ",
+    "subtitleHighlight": "Xanh",
+    "title": "LIÊN HỆ",
+    "ezPark": "Ez Park",
+    "slogan": "Think Easy, Do Better"
+  },
+  "map": {
+    "readMore": "Xem thêm...",
+    "gsHolding": {
+      "title": "CHỦ ĐẦU TƯ GS HOLDING",
+      "description": "GS Holding là chủ đầu tư phát triển bất động sản công nghiệp và hạ tầng, với 08 năm hình thành và phát triển, hoạt động trong các lĩnh vực trọng tâm..."
+    },
+    "ezPark": {
+      "title": "VỀ EZ.PARK",
+      "description": "Ez.Park là chuỗi khu công nghiệp và dịch vụ hạ tầng công nghiệp do GS Holding phát triển, định hướng theo mô hình xanh – thông minh – bền vững..."
+    },
+    "locations": {
+      "bacNinh": {
+        "title": "EZ.PARK BẮC NINH I",
+        "currentAddress": "Phường Vân Hà, tỉnh Bắc Ninh",
+        "oldAddress": {
+          "oldAddress1": "(địa chỉ cũ tại: xã Tiên Sơn, phường Ninh Sơn, thị xã",
+          "oldAddress2": "Việt Yên, tỉnh Bắc Giang)"
+        },
+        "area": "89,57 ha (giai đoạn 1)",
+        "projectDetail": "Chi tiết dự án Ez.Park Bắc Ninh I"
+      },
+      "haTinh": {
+        "title": "EZ.PARK HÀ TĨNH I",
+        "currentAddress": "Xã Đức Thọ, tỉnh Hà Tĩnh",
+        "oldAddress": {
+          "oldAddress1": "(Địa chỉ cũ: Xã Tùng Ảnh và xã Tân Dân,",
+          "oldAddress2": "huyện Đức Thọ, tỉnh Hà Tĩnh)"
+        },
+        "area": "68,17ha",
+        "projectDetail": "Chi tiết dự án Ez.Park Hà Tĩnh I"
+      },
+      "dakLak": {
+        "title": "EZ.PARK ĐẮK LẮK I",
+        "currentAddress": "Xã Cuôr Đăng, tỉnh Đắk Lắk",
+        "oldAddress": {
+          "oldAddress1": "(Địa chỉ cũ: Xã Ea Drơng, huyện Cư M'gar,",
+          "oldAddress2": "Đắk Lắk Province)"
+        },
+        "area": "313,03ha",
+        "projectDetail": "Chi tiết dự án Ez.Park Đắk Lắk I"
+      }
+    }
+  },
+  "partners": {
+    "title": "ĐỐI TÁC",
+    "strategic": "chiến lược",
+    "create": "tạo nên",
+    "outstandingValue": "GIÁ TRỊ VƯỢT TRỘI"
+  },
+  "aboutPage": {
+    "meta": {
+      "title": "Về chúng tôi | Ez.Park",
+      "description": "Về chúng tôi - GS Holding và Ez.Park"
+    },
+    "hero": {
+      "badgeAlt": "Về chúng tôi - GS Holding - Ez.Park",
+      "aboutInvestor": "về chủ đầu tư",
+      "gsHolding": "GS HOLDING",
+      "scrollDown": "Cuộn xuống",
+      "scrollUp": "Cuộn lên",
+      "investor": "CHỦ ĐẦU TƯ"
+    },
+    "content": {
+      "intro": "GS Holding là chủ đầu tư phát triển bất động sản công nghiệp và hạ tầng, với 08 năm hình thành và phát triển, hoạt động trong các lĩnh vực trọng tâm.",
+      "services": [
+        { "title1": "Bất động sản", "title2": "Công nghiệp" },
+        { "title1": "Sản xuất", "title2": "Thương mại" },
+        { "title1": "Năng lượng", "title2": "tái tạo" }
+      ],
+      "cta": "GS HOLDING",
+      "note1": "GS Holding định hướng đầu tư tại các địa phương giàu tiềm năng, đón đầu làn sóng dịch chuyển sản xuất",
+      "note2": "Đồng thời góp phần thúc đẩy phát triển kinh tế – xã hội địa phương, tạo việc làm bền vững và hài hòa với môi trường"
+    },
+    "ecosystem": {
+      "aboutLabel": "về",
+      "developedBy": "Phát triển bởi Tập đoàn GS Holding",
+      "strategy": "Chiến lược phát triển đa điểm",
+      "ecosystemTitle": "Hệ sinh thái",
+      "industrialZone": "KHU CÔNG NGHIỆP",
+      "ezParkButton": "Ez.Park",
+      "cards": [
+        "Chuỗi khu công nghiệp và dịch vụ hạ tầng công nghiệp do GS Holding phát triển, định hướng theo mô hình xanh – thông minh – bền vững.",
+        "Tập trung xây dựng quỹ đất công nghiệp chất lượng cao, hạ tầng kỹ thuật đồng bộ cùng dịch vụ hỗ trợ trọn gói, đáp ứng nhu cầu đầu tư và mở rộng sản xuất của doanh nghiệp trong nước và quốc tế",
+        "Với chiến lược phát triển đa điểm, Ez.Park hiện sở hữu 03 khu công nghiệp tại Bắc Ninh, Hà Tĩnh và Đắk Lắk, bao phủ các vùng kinh tế trọng điểm, tạo lợi thế kết nối và phát triển dài hạn cho nhà đầu tư"
+      ]
+    }
+  },
+  "legacy": {
+    "meta": {
+      "title": "Dấu ấn tạo nên Ez.Park | Ez.Park",
+      "description": "Dấu ấn tạo nên Ez.Park - Hệ sinh thái hạ tầng toàn diện"
+    },
+    "hero": {
+      "word1": "những",
+      "word2": "Dấu ấn",
+      "word3": "tạo nên",
+      "brand": "EZ.PARK",
+      "slogan": "thinheasydobetter"
+    },
+    "intro": "<brand>EZ.PARK</brand> được kiến tạo từ hệ sinh thái hạ tầng toàn diện, phát triển xanh – bền vững, kết nối cộng đồng doanh nghiệp và vận hành theo tiêu chuẩn <esg>ESG</esg>.",
+    "projectButton": "Dự án",
+    "cards": {
+      "comprehensive": {
+        "label": "Hệ sinh thái dịch vụ hạ tầng",
+        "titleLine1": "toàn",
+        "titleLine2": "diện",
+        "provide": "Cung cấp",
+        "desc1": "giải pháp từ pháp lý, đầu tư, xây dựng - vận hành đến dịch vụ hậu cần.",
+        "desc2": "giúp tối ưu chi phí và rút ngắn thời gian triển khai dự án.",
+        "alt": "Toàn diện"
+      },
+      "eco": {
+        "label": "Hạ tầng theo định hướng",
+        "titleLine1": "xanh",
+        "titleLine2": "bền vững",
+        "titleLine3": "kinh tế tuần hoàn",
+        "apply": "Ứng dụng",
+        "desc1": "công nghệ hiện đại, sử dụng năng lượng hiệu quả.",
+        "desc2": "giảm phát thải và hướng tới kinh tế tuần hoàn.",
+        "alt": "Xanh bền vững"
+      },
+      "support": {
+        "label": "Xây dựng cộng đồng doanh nghiệp",
+        "titleLine1": "liên kết",
+        "titleLine2": "hỗ trợ",
+        "titleLine3": "cùng phát triển",
+        "form": "Hình thành",
+        "desc1": "mạng lưới sản xuất - dịch vụ - logistics bổ trợ.",
+        "desc2": "tối ưu chuỗi cung ứng và mở rộng cơ hội hợp tác.",
+        "alt": "Liên kết hỗ trợ"
+      },
+      "esg": {
+        "label": "Định hướng phát triển theo",
+        "titleLine1": "tiêu chuẩn",
+        "titleLine2": "ESG",
+        "priority": "Ưu tiên",
+        "desc1": "giảm phát thải, quản lý tài nguyên hiệu quả, phúc lợi lao động và quản trị minh bạch.",
+        "desc2": "đồng hành cùng doanh nghiệp phát triển bền vững.",
+        "alt": "ESG"
+      }
+    }
+  }
+}

@@ -1,0 +1,359 @@
+{
+  "header": {
+    "nav": {
+      "about": "介绍",
+      "aboutEzPark": "关于 Ez.Park",
+      "industrialZones": "工业区项目",
+      "projectBacNinh": "Ez.Park 北宁 I",
+      "projectHaTinh": "Ez.Park 河静 I",
+      "projectDakLak": "Ez.Park 得乐 I",
+      "milestones": "铸就 Ez.Park 的里程碑",
+      "contact": "联系我们"
+    },
+    "menu": {
+      "aboutEzPark": "关于 EZ.PARK",
+      "aboutIntro": "总体介绍",
+      "investorPartners": "投资伙伴",
+      "industrialProjects": "工业区项目",
+      "projectBacNinh": "EZ.PARK 北宁 I",
+      "projectHaTinh": "EZ.PARK 河静 I",
+      "projectDakLak": "EZ.PARK 得乐 I",
+      "milestones": "铸就 EZ.PARK 的里程碑",
+      "contact": "联系我们"
+    },
+    "languages": {
+      "vi": "越南语",
+      "en": "英语",
+      "kr": "韩语",
+      "zh": "中文",
+      "ja": "日语"
+    },
+    "selectLanguage": "选择语言"
+  },
+  "hero": {
+    "ecosystem": "生态系统",
+    "subtitle1": "工业区",
+    "subtitle2": "与可持续基础设施发展",
+    "slogan": {
+      "think": "THINK",
+      "easy": "EASY",
+      "do": "DO",
+      "better": "BETTER"
+    },
+    "explore": "立即探索",
+    "energy": {
+      "title": "清洁能源",
+      "description1": "清洁能源助力工业区",
+      "description2": "减排并迈向可持续发展。",
+      "description3": "该方案提高生产效率，",
+      "description4": "环保友好。"
+    },
+    "mission": {
+      "title": "使命",
+      "description": "在全国建设工业区网络，",
+      "description2": "未来拓展更多园区..."
+    }
+  },
+  "greenEnergy": {
+    "title1": "产业",
+    "title2": "绿色能源",
+    "title3": "可持续",
+    "subtitle": "绿色产业 - 绿色能源",
+    "description1": "清洁能源助力工业区",
+    "description2": "减排并迈向可持续发展。",
+    "description3": "该方案提高生产效率且",
+    "description4": "环保友好。"
+  },
+  "statistics": {
+    "ezParkBacNinh": "Ez.Park 北宁 I",
+    "ezParkHaTinh": "Ez.Park 河静 I",
+    "ezParkDakLak": "Ez.Park 得乐 I"
+  },
+  "about": {
+    "title": "关于我们",
+    "standardOf": "标准",
+    "service": {
+      "label": "基础设施服务",
+      "title": "全面"
+    },
+    "community": {
+      "label": "企业社区",
+      "title": "连接 - 携手"
+    },
+    "esg": {
+      "label": "遵循",
+      "title": "ESG 标准"
+    },
+    "eco": {
+      "label": "绿色基础设施",
+      "title": "循环经济"
+    }
+  },
+  "solutions": {
+    "title": "E TO Z 解决方案",
+    "procedure": [
+      {
+        "label": "手续",
+        "title": "快捷简便",
+        "description": [
+          "法务手续支持 简单 – 透明"
+        ]
+      },
+      {
+        "label": "伙伴",
+        "title": "可持续",
+        "description": [
+          "全方位支持 法务 - 建设 - 运营"
+        ]
+      },
+      {
+        "label": "服务",
+        "title": "灵活",
+        "description": [
+          "生产配套 住房 - 人力 - 安保"
+        ]
+      },
+      {
+        "label": "手续",
+        "title": "快捷简便",
+        "description": [
+          "法务手续支持 简单 – 透明"
+        ]
+      },
+      {
+        "label": "伙伴",
+        "title": "可持续",
+        "description": [
+          "全方位支持 法务 - 建设 - 运营"
+        ]
+      }
+    ],
+    "cards": [
+      {
+        "companion": "伙伴",
+        "sustainable": "可持续",
+        "service": "服务",
+        "flexible": "灵活"
+      },
+      {
+        "companion": "服务",
+        "sustainable": "灵活",
+        "service": "手续",
+        "flexible": "快捷简便"
+      },
+      {
+        "companion": "手续",
+        "sustainable": "快捷简便",
+        "service": "伙伴",
+        "flexible": "可持续"
+      },
+      {
+        "companion": "伙伴",
+        "sustainable": "可持续",
+        "service": "服务",
+        "flexible": "灵活"
+      },
+      {
+        "companion": "服务",
+        "sustainable": "灵活",
+        "service": "手续",
+        "flexible": "快捷简便"
+      }
+    ]
+  },
+  "news": {
+    "title": "新闻",
+    "article": {
+      "title": "Ez.Park 参加越南投资与制造峰会 IV (VNIC 2026)",
+      "hashtags": "#EZPARK #VNIC #工业地产",
+      "description": "Ez.Park 参加了由 VNIC（越南投资咨询）与 CMA 合作举办的越南投资与制造峰会 IV，于 2026年1月6日在河内举行...",
+      "readMore": "阅读更多"
+    }
+  },
+  "vision": {
+    "title": "愿景",
+    "subtitle": "越南领先的国际标准工业生态系统",
+    "description": "Ez.Park 致力于成为越南领先的工业区及基础设施服务网络，完善绿色工业发展模式、循环产业与可持续发展。"
+  },
+  "mission": {
+    "title": "使命",
+    "subtitle": "与企业在绿色与可持续生产中携手",
+    "description": "Ez.Park 率先打造工业区与工业基础设施服务生态系统，实现安全、互联的生产，共同推动循环发展。"
+  },
+  "footer": {
+    "form": {
+      "title": "注册",
+      "title2": "获取",
+      "title3": "信息",
+      "name": "姓名",
+      "phone": "电话",
+      "email": "邮箱",
+      "field": "领域",
+      "message": "留言",
+      "submit": "发送",
+      "sending": "发送中...",
+      "success": "注册成功。",
+      "errorGeneric": "出错了，请重试。"
+    },
+    "company": {
+      "name": "Ez.Park - 工业区生态系统",
+      "developedBy": "由 GS Holding 股份有限公司开发",
+      "headquarters": "总部：河内市定功坊阮景夷街大金城区 F1 地块 2 号",
+      "contactAddress": "联系地址",
+      "businessOffice": "商务办公室：钻石塔办公楼",
+      "businessAddress": "河内市白梅坊白梅 459C 号 602 单元"
+    },
+    "copyright": "© 2025 GS Holding 版权所有",
+    "website": "www.gsholding.com.vn",
+    "designedBy": "网站由 GS GLOBAL 设计"
+  },
+  "contactHero": {
+    "subtitlePrefix": "绿色导向",
+    "subtitleHighlight": "工业园区",
+    "title": "联系我们",
+    "ezPark": "Ez Park",
+    "slogan": "Think Easy, Do Better"
+  },
+  "map": {
+    "readMore": "阅读更多...",
+    "gsHolding": {
+      "title": "投资方 GS HOLDING",
+      "description": "GS Holding 是从事工业地产与基础设施开发的投资者，成立发展八年，在重点区域运营..."
+    },
+    "ezPark": {
+      "title": "关于 EZ.PARK",
+      "description": "Ez.Park 是由 GS Holding 开发的工业区及工业基础设施服务网络，以绿色 – 智慧 – 可持续为方向..."
+    },
+    "locations": {
+      "bacNinh": {
+        "title": "EZ.PARK 北宁 I",
+        "currentAddress": "北宁省云河坊",
+        "oldAddress": {
+          "oldAddress1": "（旧地址：北江省越安县宁山坊仙山乡",
+          "oldAddress2": "北江省）"
+        },
+        "area": "89.57 公顷（一期）",
+        "projectDetail": "Ez.Park 北宁 I 项目详情"
+      },
+      "haTinh": {
+        "title": "EZ.PARK 河静 I",
+        "currentAddress": "河静省德寿社",
+        "oldAddress": {
+          "oldAddress1": "（旧地址：河静省德寿县松英社与新兴社，",
+          "oldAddress2": "河静省）"
+        },
+        "area": "68.17 公顷",
+        "projectDetail": "Ez.Park 河静 I 项目详情"
+      },
+      "dakLak": {
+        "title": "EZ.PARK 得乐 I",
+        "currentAddress": "得乐省库尔当社",
+        "oldAddress": {
+          "oldAddress1": "（旧地址：得乐省古 M'gar 县 Ea Drong 社，",
+          "oldAddress2": "得乐省）"
+        },
+        "area": "313.03 公顷",
+        "projectDetail": "Ez.Park 得乐 I 项目详情"
+      }
+    }
+  },
+  "partners": {
+    "title": "合作伙伴",
+    "strategic": "战略",
+    "create": "创造",
+    "outstandingValue": "卓越价值"
+  },
+  "aboutPage": {
+    "meta": {
+      "title": "关于我们 | Ez.Park",
+      "description": "关于我们 - GS Holding 与 Ez.Park"
+    },
+    "hero": {
+      "badgeAlt": "关于我们 - GS Holding - Ez.Park",
+      "aboutInvestor": "关于投资方",
+      "gsHolding": "GS HOLDING",
+      "scrollDown": "向下滚动",
+      "scrollUp": "向上滚动",
+      "investor": "关于投资方"
+    },
+    "content": {
+      "intro": "GS Holding 是从事工业地产与基础设施开发的投资者，成立发展八年，在重点区域运营。",
+      "services": [
+        { "title1": "房地产", "title2": "工业" },
+        { "title1": "制造", "title2": "商贸" },
+        { "title1": "能源", "title2": "可再生能源" }
+      ],
+      "cta": "GS HOLDING",
+      "note1": "GS Holding 聚焦高潜力地区投资，迎接产业转移浪潮。",
+      "note2": "在促进当地社会经济发展的同时，创造可持续就业并与环境和谐共处。"
+    },
+    "ecosystem": {
+      "aboutLabel": "关于",
+      "developedBy": "由 GS Holding 集团开发",
+      "strategy": "多点发展战略",
+      "ecosystemTitle": "生态系统",
+      "industrialZone": "工业区",
+      "ezParkButton": "Ez.Park",
+      "cards": [
+        "Ez.Park 是由 GS Holding 开发的工业区及工业基础设施服务网络，以绿色 – 智慧 – 可持续为方向。",
+        "着力建设优质工业用地、同步技术基础设施和全方位配套服务，满足国内外企业投资与扩产需求。",
+        "通过多点发展战略，Ez.Park 目前在北宁、河静、得乐拥有 03 个工业区，覆盖重点经济区域，为投资者创造联动优势与长期发展。"
+      ]
+    }
+  },
+  "legacy": {
+    "meta": {
+      "title": "铸就 Ez.Park 的里程碑 | Ez.Park",
+      "description": "Ez.Park 的里程碑 - 全面基础设施生态系统"
+    },
+    "hero": {
+      "word1": "铸就",
+      "word2": "里程碑",
+      "word3": "的",
+      "brand": "EZ.PARK",
+      "slogan": "thinheasydobetter"
+    },
+    "intro": "<brand>EZ.PARK</brand> 建立在全面基础设施生态系统、绿色可持续发展和连接企业社区之上，并按照 <esg>ESG</esg> 标准运营。",
+    "projectButton": "项目",
+    "cards": {
+      "comprehensive": {
+        "label": "基础设施服务生态系统",
+        "titleLine1": "全面",
+        "titleLine2": "解决方案",
+        "provide": "提供",
+        "desc1": "从法务、投资、建设-运营到物流的全流程解决方案。",
+        "desc2": "优化成本、缩短项目落地周期。",
+        "alt": "全面"
+      },
+      "eco": {
+        "label": "面向",
+        "titleLine1": "绿色",
+        "titleLine2": "可持续",
+        "titleLine3": "循环经济的基础设施",
+        "apply": "应用",
+        "desc1": "现代技术与高效能源利用。",
+        "desc2": "减排并迈向循环经济。",
+        "alt": "绿色可持续"
+      },
+      "support": {
+        "label": "构建企业社区",
+        "titleLine1": "支持",
+        "titleLine2": "网络",
+        "titleLine3": "共同成长",
+        "form": "形成",
+        "desc1": "生产-服务-物流支持网络。",
+        "desc2": "优化供应链、拓展合作机会。",
+        "alt": "支持链接"
+      },
+      "esg": {
+        "label": "以",
+        "titleLine1": "ESG",
+        "titleLine2": "标准为导向的发展",
+        "priority": "优先",
+        "desc1": "减排、高效资源管理、劳工福利与透明治理。",
+        "desc2": "与企业携手可持续发展。",
+        "alt": "ESG"
+      }
+    }
+  }
+}

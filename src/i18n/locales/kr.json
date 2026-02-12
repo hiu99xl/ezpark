@@ -1,0 +1,360 @@
+{
+  "header": {
+    "nav": {
+      "about": "소개",
+      "aboutEzPark": "Ez.Park 소개",
+      "industrialZones": "산업단지",
+      "projectBacNinh": "Ez.Park 박닌 I",
+      "projectHaTinh": "Ez.Park 하띤 I",
+      "projectDakLak": "Ez.Park 닥락 I",
+      "milestones": "Ez.Park의 이정표",
+      "contact": "연락처"
+    },
+    "menu": {
+      "aboutEzPark": "EZ.PARK 소개",
+      "aboutIntro": "일반 소개",
+      "visionMission": "비전 - 미션",
+      "partnersClients": "파트너 - 고객",
+      "industrialProjects": "산업단지 프로젝트",
+      "projectBacNinh": "EZ.PARK 박닌 I",
+      "projectHaTinh": "EZ.PARK 하띤 I",
+      "projectDakLak": "EZ.PARK 닥락 I",
+      "milestones": "EZ.PARK의 이정표",
+      "contact": "연락처"
+    },
+    "languages": {
+      "vi": "베트남어",
+      "en": "영어",
+      "kr": "한국어",
+      "zh": "중국어",
+      "ja": "일본어"
+    },
+    "selectLanguage": "언어 선택"
+  },
+  "hero": {
+    "ecosystem": "생태계",
+    "subtitle1": "산업단지",
+    "subtitle2": "& 지속 가능한 인프라 개발",
+    "slogan": {
+      "think": "THINK",
+      "easy": "EASY",
+      "do": "DO",
+      "better": "BETTER"
+    },
+    "explore": "지금 탐색하기",
+    "energy": {
+      "title": "청정 에너지",
+      "description1": "청정 에너지는 산업단지가",
+      "description2": "배출량을 줄이고 지속 가능한 개발로 나아가는 데 도움이 됩니다.",
+      "description3": "이 솔루션은 생산 효율성을 향상시키고",
+      "description4": "환경 친화적입니다."
+    },
+    "mission": {
+      "title": "사명",
+      "description": "전국에 산업단지 체인을 구축하고,",
+      "description2": "앞으로 더 많은 단지로 발전시킵니다..."
+    }
+  },
+  "greenEnergy": {
+    "title1": "그린",
+    "title2": "에너지",
+    "title3": "산업",
+    "subtitle": "그린 산업 - 그린 에너지",
+    "description1": "청정 에너지는 산업단지가",
+    "description2": "배출량을 줄이고 지속 가능한 개발로 나아가는 데 도움이 됩니다.",
+    "description3": "이 솔루션은 생산 효율성을 향상시키고",
+    "description4": "환경 친화적입니다."
+  },
+  "statistics": {
+    "ezParkBacNinh": "Ez.Park 박닌 I",
+    "ezParkHaTinh": "Ez.Park 하띤 I",
+    "ezParkDakLak": "Ez.Park 닥락 I"
+  },
+  "about": {
+    "title": "회사 소개",
+    "standardOf": "의 기준",
+    "service": {
+      "label": "인프라 서비스",
+      "title": "포괄적"
+    },
+    "community": {
+      "label": "비즈니스 커뮤니티",
+      "title": "연결 - 파트너십"
+    },
+    "esg": {
+      "label": "기준으로 지향",
+      "title": "ESG 기준"
+    },
+    "eco": {
+      "label": "그린 인프라",
+      "title": "순환 경제"
+    }
+  },
+  "solutions": {
+    "title": "E TO Z SOLUTION",
+    "procedure": [
+      {
+        "label": "절차",
+        "title": "빠르고 간단",
+        "description": [
+          "법적 절차 지원 간단 – 투명"
+        ]
+      },
+      {
+        "label": "동반자",
+        "title": "지속 가능",
+        "description": [
+          "전체 지원 법률 - 건설 - 운영"
+        ]
+      },
+      {
+        "label": "서비스",
+        "title": "유연",
+        "description": [
+          "생산 편의 지원 주택 - 인력 - 보안"
+        ]
+      },
+      {
+        "label": "절차",
+        "title": "빠르고 간단",
+        "description": [
+          "법적 절차 지원 간단 – 투명"
+        ]
+      },
+      {
+        "label": "동반자",
+        "title": "지속 가능",
+        "description": [
+          "전체 지원 법률 - 건설 - 운영"
+        ]
+      }
+    ],
+    "cards": [
+      {
+        "companion": "동반자",
+        "sustainable": "지속 가능",
+        "service": "서비스",
+        "flexible": "유연"
+      },
+      {
+        "companion": "서비스",
+        "sustainable": "유연",
+        "service": "절차",
+        "flexible": "빠르고 간단"
+      },
+      {
+        "companion": "절차",
+        "sustainable": "빠르고 간단",
+        "service": "동반자",
+        "flexible": "지속 가능"
+      },
+      {
+        "companion": "동반자",
+        "sustainable": "지속 가능",
+        "service": "서비스",
+        "flexible": "유연"
+      },
+      {
+        "companion": "서비스",
+        "sustainable": "유연",
+        "service": "절차",
+        "flexible": "빠르고 간단"
+      }
+    ]
+  },
+  "news": {
+    "title": "뉴스",
+    "article": {
+      "title": "Ez.Park, 베트남 투자 및 제조 서밋 IV (VNIC 2026) 참석",
+      "hashtags": "#EZPARK #VNIC #산업용부동산",
+      "description": "Ez.Park은 VNIC(베트남 투자 컨설팅)이 CMA와 협력하여 개최한 베트남 투자 및 제조 서밋 IV에 참석했으며, 2026년 1월 6일 하노이에서 개최되었습니다...",
+      "readMore": "더 보기"
+    }
+  },
+  "vision": {
+    "title": "비전",
+    "subtitle": "베트남 최고의 국제 기준 산업 생태계",
+    "description": "Ez.Park은 베트남 최고의 산업단지 및 인프라 서비스 체인이 되기를 목표로 하며, 그린 산업 개발 모델, 순환 산업, 지속 가능성을 완성하는 방향으로 나아가고 있습니다."
+  },
+  "mission": {
+    "title": "사명",
+    "subtitle": "기업과 협력하여 그린 및 지속 가능한 생산 구축",
+    "description": "Ez.Park은 산업단지 및 산업 인프라 서비스의 생태계를 선도하며, 생산이 안전하고, 연결되며, 순환 개발을 함께 지원하는 곳을 만듭니다."
+  },
+  "footer": {
+    "form": {
+      "title": "등록",
+      "title2": "정보 받기",
+      "title3": "",
+      "name": "이름",
+      "phone": "전화",
+      "email": "이메일",
+      "field": "분야",
+      "message": "메시지",
+      "submit": "보내기",
+      "sending": "전송 중...",
+      "success": "등록되었습니다.",
+      "errorGeneric": "오류가 발생했습니다. 다시 시도해 주세요."
+    },
+    "company": {
+      "name": "Ez.Park - 산업단지 생태계",
+      "developedBy": "GS Holding 주식회사에서 개발",
+      "headquarters": "본사: 하노이시 딘콩구 응우옌깐디 거리 다이킴 도시구역 F1 구획 2번",
+      "contactAddress": "연락처 주소",
+      "businessOffice": "영업 사무실: 더 다이아몬드 타워 오피스 빌딩",
+      "businessAddress": "유닛 602, 박마이구 박마이구 459C번, 하노이시"
+    },
+    "copyright": "© Copyright 2025 GS Holding. All Rights Reserved",
+    "website": "www.gsholding.com.vn",
+    "designedBy": "웹사이트는 GS GLOBAL에서 디자인했습니다"
+  },
+  "contactHero": {
+    "subtitlePrefix": "녹색 지향 ",
+    "subtitleHighlight": "산업단지",
+    "title": "연락처",
+    "ezPark": "Ez Park",
+    "slogan": "Think Easy, Do Better"
+  },
+  "map": {
+    "readMore": "더 보기...",
+    "gsHolding": {
+      "title": "투자사 GS HOLDING",
+      "description": "GS Holding은 산업 부동산 및 인프라 개발 투자사로, 8년간의 형성 및 발전을 거쳐 주요 분야에서 활동하고 있습니다..."
+    },
+    "ezPark": {
+      "title": "EZ.PARK 소개",
+      "description": "Ez.Park은 GS Holding이 개발한 산업단지 및 산업 인프라 서비스 체인으로, 친환경 – 스마트 – 지속 가능한 모델을 지향합니다..."
+    },
+    "locations": {
+      "bacNinh": {
+        "title": "EZ.PARK 박닌 I",
+        "currentAddress": "박닌성 반하구",
+        "oldAddress": {
+          "oldAddress1": "(이전 주소: 박장성 비엣옌시 닌선구 티엔선",
+          "oldAddress2": "마을)"
+        },
+        "area": "89.57 ha (1단계)",
+        "projectDetail": "Ez.Park 박닌 I 프로젝트 상세"
+      },
+      "haTinh": {
+        "title": "EZ.PARK 하띤 I",
+        "currentAddress": "하띤성 득터현 득터마을",
+        "oldAddress": {
+          "oldAddress1": "(이전 주소: 하띤성 득터현 탕아잉 마을 및",
+          "oldAddress2": "탄단 마을)"
+        },
+        "area": "68.17ha",
+        "projectDetail": "Ez.Park 하띤 I 프로젝트 상세"
+      },
+      "dakLak": {
+        "title": "EZ.PARK 닥락 I",
+        "currentAddress": "닥락성 꾸어당 마을",
+        "oldAddress": {
+          "oldAddress1": "(이전 주소: 닥락성 꾸므가르현 에어드롱",
+          "oldAddress2": "마을)"
+        },
+        "area": "313.03ha",
+        "projectDetail": "Ez.Park 닥락 I 프로젝트 상세"
+      }
+    }
+  },
+  "partners": {
+    "title": "파트너",
+    "strategic": "전략",
+    "create": "함께 만드는",
+    "outstandingValue": "탁월한 가치"
+  },
+  "aboutPage": {
+    "meta": {
+      "title": "회사 소개 | Ez.Park",
+      "description": "회사 소개 - GS Holding 및 Ez.Park"
+    },
+    "hero": {
+      "badgeAlt": "회사 소개 - GS Holding - Ez.Park",
+      "aboutInvestor": "투자자 소개",
+      "gsHolding": "GS HOLDING",
+      "scrollDown": "아래로 스크롤",
+      "scrollUp": "위로 스크롤",
+      "investor": "투자자 소개"
+    },
+    "content": {
+      "intro": "GS Holding은 산업 부동산 및 인프라 개발 투자사로, 8년간의 형성 및 발전을 거쳐 주요 분야에서 활동하고 있습니다.",
+      "services": [
+        { "title1": "부동산", "title2": "산업" },
+        { "title1": "제조", "title2": "상업" },
+        { "title1": "에너지", "title2": "재생" }
+      ],
+      "cta": "GS HOLDING",
+      "note1": "GS Holding은 잠재력이 높은 지역에 투자하고, 생산 이전 물결에 선제 대응합니다.",
+      "note2": "지역 사회경제 발전에 기여하고, 지속 가능한 일자리를 창출하며 환경과 조화를 이룹니다."
+    },
+    "ecosystem": {
+      "aboutLabel": "소개",
+      "developedBy": "GS Holding 그룹에서 개발",
+      "strategy": "다지점 개발 전략",
+      "ecosystemTitle": "생태계",
+      "industrialZone": "산업단지",
+      "ezParkButton": "Ez.Park",
+      "cards": [
+        "GS Holding이 개발한 산업단지 및 산업 인프라 서비스 체인으로, 친환경 – 스마트 – 지속 가능한 모델을 지향합니다.",
+        "고품질 산업용지 조성, 동기화된 기술 인프라 및 풀 지원 서비스에 집중하여 국내외 기업의 투자 및 생산 확장 수요를 충족합니다.",
+        "다지점 개발 전략으로 Ez.Park은 현재 박닌, 하띤, 닥락에 03개 산업단지를 보유하고 있으며, 주요 경제권을 포괄하여 투자자에게 연결성과 장기 발전의 이점을 제공합니다."
+      ]
+    }
+  },
+  "legacy": {
+    "meta": {
+      "title": "Ez.Park의 이정표 | Ez.Park",
+      "description": "Ez.Park의 이정표 - 포괄적 인프라 생태계"
+    },
+    "hero": {
+      "word1": "그",
+      "word2": "이정표",
+      "word3": "가 만들어",
+      "brand": "EZ.PARK",
+      "slogan": "thinheasydobetter"
+    },
+    "intro": "<brand>EZ.PARK</brand>는 포괄적인 인프라 생태계, 그린-지속 가능한 개발, 비즈니스 커뮤니티 연결 및 <esg>ESG</esg> 기준 운영으로 구축되었습니다.",
+    "projectButton": "프로젝트",
+    "cards": {
+      "comprehensive": {
+        "label": "인프라 서비스 생태계",
+        "titleLine1": "포괄적",
+        "titleLine2": "솔루션",
+        "provide": "제공",
+        "desc1": "법률, 투자, 건설-운영부터 물류 서비스까지 솔루션.",
+        "desc2": "비용 최적화 및 프로젝트 실행 기간 단축.",
+        "alt": "포괄적"
+      },
+      "eco": {
+        "label": "인프라 방향",
+        "titleLine1": "그린",
+        "titleLine2": "지속 가능",
+        "titleLine3": "순환 경제",
+        "apply": "적용",
+        "desc1": "현대 기술 및 효율적인 에너지 사용.",
+        "desc2": "배출 감소 및 순환 경제로.",
+        "alt": "그린 지속가능"
+      },
+      "support": {
+        "label": "비즈니스 커뮤니티 구축",
+        "titleLine1": "연결",
+        "titleLine2": "지원",
+        "titleLine3": "함께 성장",
+        "form": "구성",
+        "desc1": "생산-서비스-물류 지원 네트워크.",
+        "desc2": "공급망 최적화 및 협력 기회 확대.",
+        "alt": "지원 링크"
+      },
+      "esg": {
+        "label": "발전 방향",
+        "titleLine1": "ESG",
+        "titleLine2": "기준",
+        "priority": "우선",
+        "desc1": "배출 감소, 자원 관리, 노동 복지 및 투명한 거버넌스.",
+        "desc2": "기업과 지속 가능한 발전 동반.",
+        "alt": "ESG"
+      }
+    }
+  }
+}

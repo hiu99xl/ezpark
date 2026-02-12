@@ -1,0 +1,5 @@
+export { default as VRTourSection } from './VRTourSection'
+export { default as OverviewCardsSection } from './OverviewCardsSection'
+export { default as AdvantagesSection } from './AdvantagesSection'
+export { default as InvestorProcessSection } from './InvestorProcessSection'
+export { default as InvestmentEnvSection } from './InvestmentEnvSection'

@@ -1,0 +1,359 @@
+{
+  "header": {
+    "nav": {
+      "about": "About",
+      "aboutEzPark": "About Ez.Park",
+      "industrialZones": "Industrial Zones",
+      "projectBacNinh": "Ez.Park Bac Ninh I",
+      "projectHaTinh": "Ez.Park Ha Tinh I",
+      "projectDakLak": "Ez.Park Dak Lak I",
+      "milestones": "Milestones of Ez.Park",
+      "contact": "Contact"
+    },
+    "menu": {
+      "aboutEzPark": "ABOUT EZ.PARK",
+      "aboutIntro": "General Introduction",
+      "investorPartners": "Investor Partners",
+      "industrialProjects": "Industrial Zone Projects",
+      "projectBacNinh": "EZ.PARK Bac Ninh I",
+      "projectHaTinh": "EZ.PARK Ha Tinh I",
+      "projectDakLak": "EZ.PARK Dak Lak I",
+      "milestones": "Milestones of EZ.PARK",
+      "contact": "Contact"
+    },
+    "languages": {
+      "vi": "Vietnamese",
+      "en": "English",
+      "kr": "Korean",
+      "zh": "Chinese",
+      "ja": "Japanese"
+    },
+    "selectLanguage": "Select language"
+  },
+  "hero": {
+    "ecosystem": "ECOSYSTEM",
+    "subtitle1": "Industrial Zones",
+    "subtitle2": "& Sustainable Infrastructure Development",
+    "slogan": {
+      "think": "THINK",
+      "easy": "EASY",
+      "do": "DO",
+      "better": "BETTER"
+    },
+    "explore": "Explore Now",
+    "energy": {
+      "title": "Clean Energy",
+      "description1": "Clean energy helps industrial zones",
+      "description2": "reduce emissions and move towards sustainable development.",
+      "description3": "This solution enhances production efficiency and is",
+      "description4": "environmentally friendly."
+    },
+    "mission": {
+      "title": "Mission",
+      "description": "Building a chain of industrial zones nationwide,",
+      "description2": "developing into many more zones in the future..."
+    }
+  },
+  "greenEnergy": {
+    "title1": "INDUSTRY",
+    "title2": "GREEN ENERGY",
+    "title3": "SUSTAINABLE",
+    "subtitle": "Green industry - green energy",
+    "description1": "Clean energy helps industrial zones",
+    "description2": "reduce emissions and move towards sustainable development.",
+    "description3": "This solution enhances production efficiency and is",
+    "description4": "environmentally friendly."
+  },
+  "statistics": {
+    "ezParkBacNinh": "Ez.Park Bac Ninh I",
+    "ezParkHaTinh": "Ez.Park Ha Tinh I",
+    "ezParkDakLak": "Ez.Park Dak Lak I"
+  },
+  "about": {
+    "title": "About Us",
+    "standardOf": "STANDARD OF",
+    "service": {
+      "label": "infrastructure services",
+      "title": "COMPREHENSIVE"
+    },
+    "community": {
+      "label": "business community",
+      "title": "CONNECTED - PARTNERED"
+    },
+    "esg": {
+      "label": "oriented by",
+      "title": "ESG STANDARDS"
+    },
+    "eco": {
+      "label": "green infrastructure",
+      "title": "CIRCULAR ECONOMY"
+    }
+  },
+  "solutions": {
+    "title": "E TO Z SOLUTION",
+    "procedure": [
+      {
+        "label": "Procedures",
+        "title": "Quick & Simple",
+        "description": [
+          "Legal procedure support SIMPLE – TRANSPARENT"
+        ]
+      },
+      {
+        "label": "Companion",
+        "title": "Sustainable",
+        "description": [
+          "Full support LEGAL - CONSTRUCTION - OPERATIONS"
+        ]
+      },
+      {
+        "label": "Service",
+        "title": "Flexible",
+        "description": [
+          "Utilities support production HOUSING - WORKFORCE - SECURITY"
+        ]
+      },
+      {
+        "label": "Procedures",
+        "title": "Quick & Simple",
+        "description": [
+          "Legal procedure support SIMPLE – TRANSPARENT"
+        ]
+      },
+      {
+        "label": "Companion",
+        "title": "Sustainable",
+        "description": [
+          "Full support LEGAL - CONSTRUCTION - OPERATIONS"
+        ]
+      }
+    ],
+    "cards": [
+      {
+        "companion": "Companion",
+        "sustainable": "Sustainable",
+        "service": "Service",
+        "flexible": "Flexible"
+      },
+      {
+        "companion": "Service",
+        "sustainable": "Flexible",
+        "service": "Procedures",
+        "flexible": "Quick & Simple"
+      },
+      {
+        "companion": "Procedures",
+        "sustainable": "Quick & Simple",
+        "service": "Companion",
+        "flexible": "Sustainable"
+      },
+      {
+        "companion": "Companion",
+        "sustainable": "Sustainable",
+        "service": "Service",
+        "flexible": "Flexible"
+      },
+      {
+        "companion": "Service",
+        "sustainable": "Flexible",
+        "service": "Procedures",
+        "flexible": "Quick & Simple"
+      }
+    ]
+  },
+  "news": {
+    "title": "NEWS",
+    "article": {
+      "title": "Ez.Park attends Vietnam Investment & Manufacturing Summit IV (VNIC 2026)",
+      "hashtags": "#EZPARK #VNIC #IndustrialRealEstate",
+      "description": "Ez.Park attended the Vietnam Investment & Manufacturing Summit IV organized by VNIC (Vietnam Investment Consulting) in collaboration with CMA, held on 06/01/2026 in Hanoi...",
+      "readMore": "Read More"
+    }
+  },
+  "vision": {
+    "title": "VISION",
+    "subtitle": "VIETNAM'S LEADING INTERNATIONAL STANDARD INDUSTRIAL ECOSYSTEM",
+    "description": "Ez.Park aims to become Vietnam's leading chain of industrial zones & infrastructure services, moving towards perfecting the green industrial development model, circular industry, and sustainability."
+  },
+  "mission": {
+    "title": "MISSION",
+    "subtitle": "PARTNER WITH BUSINESSES TO BUILD GREEN & SUSTAINABLE PRODUCTION",
+    "description": "Ez.Park pioneers in creating an ecosystem of industrial zones & industrial infrastructure services, where production is safe, connected, and supports circular development together."
+  },
+  "footer": {
+    "form": {
+      "title": "Register",
+      "title2": "to receive",
+      "title3": "Information",
+      "name": "Name",
+      "phone": "Phone",
+      "email": "Email",
+      "field": "Field",
+      "message": "Message",
+      "submit": "Send",
+      "sending": "Sending...",
+      "success": "Registration successful.",
+      "errorGeneric": "Something went wrong. Please try again."
+    },
+    "company": {
+      "name": "Ez.Park - Industrial Zone Ecosystem",
+      "developedBy": "Developed by GS Holding Joint Stock Company",
+      "headquarters": "Headquarters: No. 2 - Lot F1, Dai Kim Urban Area, Nguyen Canh Di Street, Dinh Cong Ward, Hanoi City",
+      "contactAddress": "Contact Address",
+      "businessOffice": "Business Office: The Diamond Tower Office Building",
+      "businessAddress": "Unit 602, No. 459C Bach Mai, Bach Mai Ward, Hanoi City"
+    },
+    "copyright": "© Copyright 2025 GS Holding. All Rights Reserved",
+    "website": "www.gsholding.com.vn",
+    "designedBy": "Website designed by GS GLOBAL"
+  },
+  "contactHero": {
+    "subtitlePrefix": "Green-oriented industrial ",
+    "subtitleHighlight": "park",
+    "title": "CONTACT",
+    "ezPark": "Ez Park",
+    "slogan": "Think Easy, Do Better"
+  },
+  "map": {
+    "readMore": "Read more...",
+    "gsHolding": {
+      "title": "INVESTOR GS HOLDING",
+      "description": "GS Holding is an investor developing industrial real estate and infrastructure, with 08 years of formation and development, operating in key areas..."
+    },
+    "ezPark": {
+      "title": "ABOUT EZ.PARK",
+      "description": "Ez.Park is a chain of industrial zones and industrial infrastructure services developed by GS Holding, oriented towards a green – smart – sustainable model..."
+    },
+    "locations": {
+      "bacNinh": {
+        "title": "EZ.PARK BAC NINH I",
+        "currentAddress": "Van Ha Ward, Bac Ninh Province",
+        "oldAddress": {
+          "oldAddress1": "(old address at: Tien Son Commune, Ninh Son Ward, Viet Yen",
+          "oldAddress2": "Town, Bac Giang Province)"
+        },
+        "area": "89.57 ha (Phase 1)",
+        "projectDetail": "Ez.Park Bac Ninh I project detail"
+      },
+      "haTinh": {
+        "title": "EZ.PARK HA TINH I",
+        "currentAddress": "Duc Tho Commune, Ha Tinh Province",
+        "oldAddress": {
+          "oldAddress1": "(Old address: Tung Anh Commune and Tan Dan Commune,",
+          "oldAddress2": "Duc Tho District, Ha Tinh Province)"
+        },
+        "area": "68.17 ha",
+        "projectDetail": "Ez.Park Ha Tinh I project detail"
+      },
+      "dakLak": {
+        "title": "EZ.PARK DAK LAK I",
+        "currentAddress": "Cuor Dang Commune, Dak Lak Province",
+        "oldAddress": {
+          "oldAddress1": "(Old address: Ea Drong Commune, Cu M'gar District,",
+          "oldAddress2": "Dak Lak Province)"
+        },
+        "area": "313.03 ha",
+        "projectDetail": "Ez.Park Dak Lak I project detail"
+      }
+    }
+  },
+  "partners": {
+    "title": "PARTNERS",
+    "strategic": "strategic",
+    "create": "creating",
+    "outstandingValue": "OUTSTANDING VALUE"
+  },
+  "aboutPage": {
+    "meta": {
+      "title": "About Us | Ez.Park",
+      "description": "About us - GS Holding and Ez.Park"
+    },
+    "hero": {
+      "badgeAlt": "About us - GS Holding - Ez.Park",
+      "aboutInvestor": "about the investor",
+      "gsHolding": "GS HOLDING",
+      "scrollDown": "Scroll down",
+      "scrollUp": "Scroll up",
+      "investor": "INVESTOR"
+    },
+    "content": {
+      "intro": "GS Holding is an investor developing industrial real estate and infrastructure, with 08 years of formation and development, operating in key areas.",
+      "services": [
+        { "title1": "Real estate", "title2": "Industrial" },
+        { "title1": "Manufacturing", "title2": "Commerce" },
+        { "title1": "Energy", "title2": "Renewable" }
+      ],
+      "cta": "GS HOLDING",
+      "note1": "GS Holding focuses on investing in localities with high potential, anticipating the wave of production relocation.",
+      "note2": "While contributing to local socio-economic development, creating sustainable jobs and harmonizing with the environment."
+    },
+    "ecosystem": {
+      "aboutLabel": "about",
+      "developedBy": "Developed by GS Holding Group",
+      "strategy": "Multi-point development strategy",
+      "ecosystemTitle": "Ecosystem",
+      "industrialZone": "INDUSTRIAL ZONE",
+      "ezParkButton": "Ez.Park",
+      "cards": [
+        "A chain of industrial zones and industrial infrastructure services developed by GS Holding, oriented towards a green – smart – sustainable model.",
+        "Focus on building high-quality industrial land fund, synchronized technical infrastructure and full support services to meet the investment and production expansion needs of domestic and international enterprises.",
+        "With a multi-point development strategy, Ez.Park currently owns 03 industrial zones in Bac Ninh, Ha Tinh and Dak Lak, covering key economic regions, creating connectivity advantages and long-term development for investors."
+      ]
+    }
+  },
+  "legacy": {
+    "meta": {
+      "title": "Milestones of Ez.Park | Ez.Park",
+      "description": "Milestones of Ez.Park - Comprehensive infrastructure ecosystem"
+    },
+    "hero": {
+      "word1": "the",
+      "word2": "Milestones",
+      "word3": "that shape",
+      "brand": "EZ.PARK",
+      "slogan": "thinheasydobetter"
+    },
+    "intro": "<brand>EZ.PARK</brand> is built from a comprehensive infrastructure ecosystem, green – sustainable development, connecting the business community and operating to <esg>ESG</esg> standards.",
+    "projectButton": "Project",
+    "cards": {
+      "comprehensive": {
+        "label": "Infrastructure services ecosystem",
+        "titleLine1": "comprehensive",
+        "titleLine2": "solutions",
+        "provide": "Provide",
+        "desc1": "solutions from legal, investment, construction - operation to logistics services.",
+        "desc2": "optimize costs and shorten project implementation time.",
+        "alt": "Comprehensive"
+      },
+      "eco": {
+        "label": "Infrastructure oriented towards",
+        "titleLine1": "green",
+        "titleLine2": "sustainable",
+        "titleLine3": "circular economy",
+        "apply": "Apply",
+        "desc1": "modern technology and efficient energy use.",
+        "desc2": "reduce emissions and move towards a circular economy.",
+        "alt": "Green sustainable"
+      },
+      "support": {
+        "label": "Building business community",
+        "titleLine1": "support",
+        "titleLine2": "network",
+        "titleLine3": "growing together",
+        "form": "Form",
+        "desc1": "production - service - logistics support network.",
+        "desc2": "optimize supply chain and expand cooperation opportunities.",
+        "alt": "Support link"
+      },
+      "esg": {
+        "label": "Development oriented by",
+        "titleLine1": "ESG",
+        "titleLine2": "standards",
+        "priority": "Prioritize",
+        "desc1": "emission reduction, efficient resource management, labor welfare and transparent governance.",
+        "desc2": "partner with businesses for sustainable development.",
+        "alt": "ESG"
+      }
+    }
+  }
+}
