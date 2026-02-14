@@ -46,65 +46,77 @@ export default function InvestmentEnvSection() {
             </div>
           </div>
 
-          <div className="space-y-0 w-full">
+          <div className="space-y-0 w-full flex flex-col" style={{ ['--icon-col-width' as string]: 'calc(clamp(106.67px, 10.42vw, 400px) + 40px)' }}>
+            <div className="relative">
             <div className="flex items-stretch w-full">
               <div className="flex-1 min-w-0 flex flex-col w-full overflow-hidden">
                 <div className="flex border-b-2 border-black border-solid pb-1 w-full" style={{ alignItems: 'stretch' }}>
                   <p className="flex-1 font-light min-w-0 pl-4" style={{ fontSize: 'clamp(10.13px, 0.99vw, 38px)', color: '#070707' }}>FDI gần</p>
-                  <div className="border-l-[1.5px] border-primary border-solid shrink-0" style={{ width: 'clamp(60px, 6vw, 200px)' }} />
+                  <div className="shrink-0" style={{ width: 'var(--icon-col-width)' }} />
                 </div>
                 <div className="flex w-full" style={{ alignItems: 'stretch' }}>
                   <div className="flex-1 font-extrabold text-primary min-w-0 pl-4 pt-[10px]" style={{ fontSize: 'clamp(38.4px, 3.75vw, 144px)', lineHeight: 1 }}>50 tỷ <span className="text-base font-normal text-gray-500" style={{ lineHeight: 1 }}>USD</span></div>
-                  <div className="border-l-[1.5px] border-primary border-solid pl-0 flex items-center justify-start shrink-0" style={{ width: 'clamp(60px, 6vw, 200px)' }}>
+                  <div className="pl-0 flex items-center justify-center shrink-0" style={{ width: 'var(--icon-col-width)' }}>
                     <span className="font-light block text-gray-800" style={{ WebkitTextStroke: '2px currentColor', paintOrder: 'stroke fill', lineHeight: 0.8, fontSize: 'clamp(48px, 5vw, 180px)' }}>$</span>
                   </div>
                 </div>
                 <div className="flex border-b-2 border-black border-solid pb-1 w-full" style={{ alignItems: 'stretch' }}>
                   <p className="flex-1 font-light min-w-0 pl-4" style={{ fontSize: 'clamp(10.13px, 0.99vw, 38px)', color: '#070707' }}>Diện tích</p>
-                  <div className="border-l-[1.5px] border-primary border-solid shrink-0" style={{ width: 'clamp(60px, 6vw, 200px)' }} />
+                  <div className="shrink-0" style={{ width: 'var(--icon-col-width)' }} />
                 </div>
                 <div className="flex w-full" style={{ alignItems: 'stretch' }}>
                   <div className="flex-1 font-extrabold text-primary min-w-0 pl-4 pt-[10px]" style={{ fontSize: 'clamp(38.4px, 3.75vw, 144px)', lineHeight: 1 }}>4.718,6 <span className="text-base font-normal text-gray-500" style={{ lineHeight: 1 }}>Km²</span></div>
-                  <div className="border-l-[1.5px] border-primary border-solid pl-0 flex items-center justify-start shrink-0" style={{ width: 'clamp(60px, 6vw, 200px)' }}>
+                  <div className="pl-0 flex items-center justify-center shrink-0" style={{ width: 'var(--icon-col-width)' }}>
                     <Image src="/images/sections/icon_area.svg" alt="" width={116} height={116} className="max-w-full max-h-full w-auto h-auto object-contain" />
                   </div>
                 </div>
                 <div className="flex border-b-2 border-black border-solid pb-1 w-full" style={{ alignItems: 'stretch' }}>
                   <p className="flex-1 font-light min-w-0 pl-4" style={{ fontSize: 'clamp(10.13px, 0.99vw, 38px)', color: '#070707' }}>Nguồn nhân lực hơn</p>
-                  <div className="border-l-[1.5px] border-primary border-solid shrink-0" style={{ width: 'clamp(60px, 6vw, 200px)' }} />
-              </div>~
+                  <div className="shrink-0" style={{ width: 'var(--icon-col-width)' }} />
+              </div>
                 <div className="flex w-full" style={{ alignItems: 'stretch' }}>
                   <div className="flex-1 font-extrabold text-primary min-w-0 pl-4 pt-[10px]" style={{ fontSize: 'clamp(38.4px, 3.75vw, 144px)', lineHeight: 1 }}>2 triệu <span className="text-base font-normal text-gray-500" style={{ lineHeight: 1 }}>lao động</span></div>
-                  <div className="border-l-[1.5px] border-primary border-solid pl-0 flex items-center justify-start shrink-0" style={{ width: 'clamp(60px, 6vw, 200px)' }}>
+                  <div className="pl-0 flex items-center justify-center shrink-0" style={{ width: 'var(--icon-col-width)' }}>
                     <Image src="/images/sections/icon_people.svg" alt="" width={132} height={102} className="max-w-full max-h-full w-auto h-auto object-contain" />
                   </div>
                 </div>
               </div>
             </div>
+            <div className="h-8 shrink-0" aria-hidden />
+            <div className="absolute top-0 bottom-0 w-[1.5px] bg-primary pointer-events-none" style={{ left: 'calc(100% - var(--icon-col-width))' }} aria-hidden />
+            <div className="absolute top-0 h-[1.5px] bg-primary pointer-events-none" style={{ left: 'calc(100% - var(--icon-col-width))', width: 'clamp(18.13px, 1.77vw, 68px)' }} aria-hidden />
+            <div className="absolute top-0 rounded-full bg-primary pointer-events-none -translate-x-1/2 -translate-y-1/2" style={{ left: 'calc(100% - var(--icon-col-width) + clamp(18.13px, 1.77vw, 68px) + 12px)', width: 'clamp(18.13px, 1.77vw, 68px)', height: 'clamp(18.13px, 1.77vw, 68px)' }} aria-hidden />
+            </div>
 
             <div
-              className="mt-8 grid w-full border-[1.5px] border-primary border-solid pb-4"
-              style={{ gridTemplateColumns: '1fr auto' }}
+              className="grid w-full border-[1.5px] border-primary border-solid pb-4"
+              style={{ gridTemplateColumns: '1fr var(--icon-col-width)' }}
             >
               <div className="flex items-center py-2 pt-4 pl-4">
                 <span className="text-primary">Hạ tầng giao thông</span>
               </div>
-              <div className="flex items-center justify-center py-2 pt-4" style={{ paddingRight: 'clamp(106.67px, 10.42vw, 400px)' }}>
-                <IconTransport />
+              <div className="flex items-center justify-center py-2 pt-4 relative">
+                <span className="absolute left-0 -translate-x-[calc(50%-2px)]">
+                  <IconTransport />
+                </span>
               </div>
               <div className="col-span-2 border-t-[1.5px] border-primary border-solid" />
               <div className="flex items-center pt-3 py-2 pl-4">
                 <span className="text-primary">Mạng lưới KCN</span>
               </div>
-              <div className="flex items-center justify-center pt-3 py-2" style={{ paddingRight: 'clamp(106.67px, 10.42vw, 400px)' }}>
-                <IconNetwork />
+              <div className="flex items-center justify-center pt-3 py-2 relative">
+                <span className="absolute left-0 -translate-x-[calc(50%-2px)]">
+                  <IconNetwork />
+                </span>
               </div>
               <div className="col-span-2 border-t-[1.5px] border-primary border-solid" />
               <div className="flex items-center pt-3 py-2 pl-4">
                 <span className="text-primary">Vị trí chiến lược</span>
               </div>
-              <div className="flex items-center justify-center pt-3 py-2" style={{ paddingRight: 'clamp(106.67px, 10.42vw, 400px)' }}>
-                <IconPin />
+              <div className="flex items-center justify-center pt-3 py-2 relative">
+                <span className="absolute left-0 -translate-x-[calc(50%-2px)]">
+                  <IconPin />
+                </span>
               </div>
             </div>
 
