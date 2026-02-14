@@ -48,7 +48,6 @@ export default function InvestmentEnvSection() {
 
           <div className="space-y-0 w-full">
             <div className="flex items-stretch w-full">
-              <div className="w-[1.5px] bg-primary shrink-0 self-stretch" aria-hidden />
               <div className="flex-1 min-w-0 flex flex-col w-full overflow-hidden">
                 <div className="flex border-b-2 border-black border-solid pb-1 w-full" style={{ alignItems: 'stretch' }}>
                   <p className="flex-1 font-light min-w-0 pl-4" style={{ fontSize: 'clamp(10.13px, 0.99vw, 38px)', color: '#070707' }}>FDI gần</p>
@@ -73,7 +72,7 @@ export default function InvestmentEnvSection() {
                 <div className="flex border-b-2 border-black border-solid pb-1 w-full" style={{ alignItems: 'stretch' }}>
                   <p className="flex-1 font-light min-w-0 pl-4" style={{ fontSize: 'clamp(10.13px, 0.99vw, 38px)', color: '#070707' }}>Nguồn nhân lực hơn</p>
                   <div className="border-l-[1.5px] border-primary border-solid shrink-0" style={{ width: 'clamp(60px, 6vw, 200px)' }} />
-                </div>
+              </div>~
                 <div className="flex w-full" style={{ alignItems: 'stretch' }}>
                   <div className="flex-1 font-extrabold text-primary min-w-0 pl-4 pt-[10px]" style={{ fontSize: 'clamp(38.4px, 3.75vw, 144px)', lineHeight: 1 }}>2 triệu <span className="text-base font-normal text-gray-500" style={{ lineHeight: 1 }}>lao động</span></div>
                   <div className="border-l-[1.5px] border-primary border-solid pl-0 flex items-center justify-start shrink-0" style={{ width: 'clamp(60px, 6vw, 200px)' }}>
