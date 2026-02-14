@@ -12,7 +12,6 @@ import { HEADER_HORIZONTAL_PADDING } from '@/constants/layout';
 import { useMediaQuery } from 'react-responsive';
 import { useTranslations } from 'next-intl';
 
-/* Types */
 type HeaderProps = {
   mode?: typeof MODE_DEFAULT | typeof MODE_LIGHT;
   custom?: {
@@ -29,7 +28,6 @@ type HeaderProps = {
   }
 }
 
-/* Constants */
 const MODE_DEFAULT = 'default';
 const MODE_LIGHT = 'light';
 
@@ -41,13 +39,11 @@ const MENU_SECTIONS: { id: string; key: 'overview' | 'masterPlan' | 'advantages'
   { id: 'section-investment-env', key: 'investmentEnv' },
 ];
 
-/* Component */
 const Header = ({
   mode = MODE_DEFAULT,
   custom = {},
 }: HeaderProps) => {
   const { logoConfig, headerCls, headerScrollCls, customMenuPosition } = custom;
-  // Validate mode
   const isLight = mode === MODE_LIGHT;
   
   const [isMounted, setIsMounted] = useState(false)
@@ -61,7 +57,6 @@ const Header = ({
     setIsMounted(true)
   }, []);
 
-  /** isScrollTop = true khi không ở đầu trang (y > 50), kể cả sau reload; ở top thì false. isScrollDown = true khi đang cuộn xuống và y > 50. */
   useEffect(() => {
     const SCROLL_TOP_THRESHOLD = 50
     if (typeof window !== 'undefined') {
@@ -111,7 +106,6 @@ const Header = ({
         isScrollTop && menuClassScrollTop
       )}
     >
-      {/* LOGO + TAGLINE */}
       <div
         className={cn(
           'col-span-1 lg:col-span-7',
@@ -153,11 +147,9 @@ const Header = ({
           <HeaderExpandIconSvg className="w-[30px] h-[30px]" />
         </span>
       </div>
-      {/* NAV BAR */}
       <div id="nav-bar" className={cn(
         'flex justify-center items-center',
       )}>
-        {/* MOBILE MENU BUTTON */}
         <MenuButton
           position={customMenuPosition ?? 'bottom-center'}
           isScrollDown={isScrollDown}
@@ -170,7 +162,6 @@ const Header = ({
             }
           }}
         />
-        {/* DESKTOP NAV BAR: white bg 29%, padding 17/19/36px, rounded 8px; gap 40px; text white; active: black text, bg white 49%, padding 11/14/34px */}
         <nav
           className={cn(
             'hidden lg:flex items-center justify-center gap-[40px]',
@@ -199,13 +190,6 @@ const Header = ({
           })}
         </nav>
       </div>
-      {/* LANGUAGE SWITCHER */}
-      {/* <div className={cn(
-        'col-span-1 lg:col-span-3',
-        'flex justify-end items-center',
-      )}>
-        <LanguageSwitcher linkClassName={isLight ? "text-black border-black/35 [&>svg]:fill-black/50" : "text-white"} isLight showLabel={!isMobile} />
-      </div> */}
     </header>
   );
 };

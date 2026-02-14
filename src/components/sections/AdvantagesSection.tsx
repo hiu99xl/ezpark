@@ -9,7 +9,6 @@ export default function AdvantagesSection() {
     <section id="section-advantages" className="bg-white">
       <div className="w-full">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
-          {/* 1_1: Lợi thế • Khác biệt */}
           <div className="bg-primary pl-[clamp(60.8px,5.9375vw,228px)] pt-8 pr-8 pb-8 flex flex-col justify-end items-start text-white h-[clamp(256px,25vw,960px)]">
             <div className="mb-4 w-[clamp(61.33px,5.99vw,230px)] h-auto">
               <Image src="/images/sections/advantages_ez.svg" alt="" width={116} height={116} className="w-full h-auto" />
@@ -36,14 +35,11 @@ export default function AdvantagesSection() {
             </h3>
           </div>
 
-          {/* 1_2: Row 1, card 2 - image */}
           <div className="bg-gray-100 overflow-hidden h-[clamp(256px,25vw,960px)] relative">
             <Image src="/images/home/card_1_2.png" alt="" fill className="object-cover" sizes="25vw" />
           </div>
 
-          {/* 1_3: Ưu đãi thuế nhập khẩu */}
           <div className="bg-primary p-8 flex flex-col justify-center text-white h-[clamp(256px,25vw,960px)]">
-            {/* Title row: Ưu đãi ! / thuế / nhập khẩu — icon only on the right of this block */}
             <div className="flex flex-row justify-between items-center gap-4 mb-2">
               <h4 className="leading-tight min-w-0" style={{ fontSize: 'clamp(24px, 2.34375vw, 90px)' }}>
                 <span className="font-semibold block">Ưu đãi !</span>
@@ -61,9 +57,7 @@ export default function AdvantagesSection() {
             </div>
           </div>
 
-          {/* 1_4: Thủ tục pháp lý */}
           <div className="bg-[#999999] p-8 flex flex-col justify-center h-[clamp(256px,25vw,960px)]">
-            {/* Title row: Thủ tục / pháp lý . — icon on the right */}
             <div className="flex flex-row justify-between items-center gap-4 mb-4">
               <h4 className="leading-tight min-w-0 text-white" style={{ fontSize: 'clamp(25.07px, 2.45vw, 94px)' }}>
                 <span className="font-semibold block">Thủ tục</span>
@@ -90,12 +84,10 @@ export default function AdvantagesSection() {
             </div>
           </div>
 
-          {/* 2_1: Row 2, card 1 - image */}
           <div className="bg-gray-100 overflow-hidden h-[clamp(256px,25vw,960px)] relative">
             <Image src="/images/home/card_2_1.png" alt="" fill className="object-cover" sizes="25vw" />
           </div>
 
-          {/* 2_2: Ưu đãi thuế đất hàng năm */}
           <div className="p-8 flex flex-col justify-center text-white h-[clamp(256px,25vw,960px)] relative overflow-hidden" style={{ backgroundColor: '#7ACCCC' }}>
             <div className="flex flex-row justify-between items-center gap-4 mb-2">
               <h4 className="leading-tight min-w-0" style={{ fontSize: 'clamp(25.6px, 2.5vw, 96px)' }}>
@@ -120,12 +112,10 @@ export default function AdvantagesSection() {
             </div>
           </div>
 
-          {/* 2_3: Row 2, card 3 - image */}
           <div className="bg-gray-100 overflow-hidden h-[clamp(256px,25vw,960px)] relative">
             <Image src="/images/home/card_2_3.png" alt="" fill className="object-cover" sizes="25vw" />
           </div>
 
-          {/* 2_4: Row 2, card 4 - image */}
           <div className="bg-gray-100 overflow-hidden h-[clamp(256px,25vw,960px)] relative">
             <Image src="/images/home/card_2_4.png" alt="" fill className="object-cover" sizes="25vw" />
           </div>

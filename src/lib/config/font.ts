@@ -1,13 +1,7 @@
 import localFont from "next/font/local";
 
-/**
- * Cấu hình font Plus Jakarta Sans từ folder public/fonts/
- * Ưu tiên sử dụng các file .woff2 (format tối ưu nhất) cho tất cả các weights
- * Bao gồm cả normal và italic styles
- */
 export const PlusJakartaSans = localFont({
   src: [
-    // Normal styles
     {
       path: '../../../public/fonts/PlusJakartaSans-ExtraLight.woff2',
       weight: '200',
@@ -43,7 +37,6 @@ export const PlusJakartaSans = localFont({
       weight: '800',
       style: 'normal',
     },
-    // Italic styles
     {
       path: '../../../public/fonts/PlusJakartaSans-ExtraLightItalic.woff2',
       weight: '200',
@@ -85,14 +78,8 @@ export const PlusJakartaSans = localFont({
   fallback: ['system-ui', 'arial'],
 });
 
-/**
- * Cấu hình font Georgia từ folder public/fonts/
- * Sử dụng file .woff2 (format tối ưu nhất) cho tất cả các weights
- * Bao gồm cả normal và italic styles
- */
 export const Georgia = localFont({
   src: [
-    // Normal styles
     {
       path: '../../../public/fonts/Georgia.woff2',
       weight: '400',
@@ -103,7 +90,6 @@ export const Georgia = localFont({
       weight: '700',
       style: 'bold',
     },
-    // Italic styles
     {
       path: '../../../public/fonts/Georgia-Italic.woff2',
       weight: '400',
@@ -120,9 +106,6 @@ export const Georgia = localFont({
   fallback: ['Georgia', 'serif'],
 });
 
-/**
- * UTM Aquarelle - used on Legacy page
- */
 export const UTMAquarelle = localFont({
   src: '../../../public/fonts/UTM-Aquarelle.ttf',
   display: 'swap',

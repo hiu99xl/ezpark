@@ -1,7 +1,3 @@
-/**
- * API types for CMS page payload
- */
-
 export type LexicalTextNode = {
   mode?: string;
   text?: string;
@@ -72,20 +68,14 @@ export type PagePayload = {
   _status?: string;
 };
 
-/**
- * Parsed home page data for components (no raw Lexical)
- */
 export type HomePageData = {
   title: string;
   heroImageUrl: string | null;
   heroImageAlt: string | null;
-  /** Headlines from content (e.g. "Standards", "of EZ.Park") */
   headlineLines: string[];
-  /** h3-style headings from content for about/standards */
   contentHeadings: string[];
 };
 
-/** News API payload (single article) */
 export type NewsPayload = {
   id: number;
   title: string;
@@ -102,23 +92,18 @@ export type NewsPayload = {
   [key: string]: unknown;
 };
 
-/** Block for rendering news article body (from Lexical) */
 export type NewsContentBlock =
   | { type: 'paragraph'; text: string }
   | { type: 'image'; url: string; alt: string | null; caption?: string | null };
 
-/** Parsed news article for detail page and home NewsSection */
 export type NewsArticleData = {
   id: number;
   slug: string;
   title: string;
   excerpt: string | null;
-  /** Main image URL (homepagePhoto or detailPhoto) */
   imageUrl: string | null;
   imageAlt: string | null;
-  /** Formatted date for display */
   dateDisplay: string;
   tags: string[];
-  /** Ordered blocks: paragraphs and images */
   contentBlocks: NewsContentBlock[];
 };

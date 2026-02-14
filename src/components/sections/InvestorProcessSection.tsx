@@ -31,7 +31,6 @@ export default function InvestorProcessSection() {
 
       <div className="relative z-10 max-w-[1440px] mx-auto px-4 sm:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
-          {/* Left: Investor */}
           <div className="lg:col-span-4">
             <h2 className="text-primary text-4xl font-bold mb-8">Chủ đầu tư</h2>
             <div className="bg-white rounded-2xl p-6 w-48 h-48 flex items-center justify-center mb-6">
@@ -43,7 +42,6 @@ export default function InvestorProcessSection() {
             </p>
           </div>
 
-          {/* Right: Process Steps */}
           <div className="lg:col-span-8">
             <div className="flex flex-col h-full justify-center">
               <div className="mb-12">

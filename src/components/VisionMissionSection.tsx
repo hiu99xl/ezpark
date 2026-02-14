@@ -4,17 +4,11 @@ import Image from 'next/image'
 import ThinkEasyDoBetter from '@/components/ThinkEasyDoBetter'
 
 export type VisionMissionSectionProps = {
-  /** When provided, shows custom content instead of the default tagline. */
   children?: React.ReactNode
-  /** When false, children are rendered in flow without absolute centering. */
   centerChildren?: boolean
-  /** When true, bottom block (Next Action + icons) is centered horizontally. */
   centerBottomBlock?: boolean
 }
 
-/**
- * Vision block: background + centered tagline "think easy do better" (or children) + bottom icons.
- */
 export default function VisionMissionSection({ children, centerChildren = true, centerBottomBlock = false }: VisionMissionSectionProps) {
 
   return (
@@ -35,7 +29,6 @@ export default function VisionMissionSection({ children, centerChildren = true, 
         />
       </div>
 
-      {/* Centered tagline: THINK easy DO better – same as Hero */}
       <div className="relative z-20 h-full flex items-center justify-center px-4">
         {children != null ? (
           centerChildren ? (

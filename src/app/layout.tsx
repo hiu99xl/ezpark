@@ -19,7 +19,6 @@ export default function RootLayout({
   return (
     <html lang="vi" className={`${PlusJakartaSans.variable} ${Georgia.variable}`}>
       <head>
-        {/* Additional Meta Tags */}
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
       <body

@@ -1,4 +1,4 @@
-export const locales = ["vi", "en", "kr", "zh" /* , "ja" */] as const;
+export const locales = ["vi", "en", "kr", "zh"] as const;
 export const defaultLocale = "vi";
 
 export const localeLabels: Record<string,string> = {
@@ -6,7 +6,6 @@ export const localeLabels: Record<string,string> = {
   en: "EN",
   kr: "KR",
   zh: "ZH"
-  // ja: "JA"
 };
 
 export const localeDisplayNames: Record<string, string> = {
@@ -14,7 +13,6 @@ export const localeDisplayNames: Record<string, string> = {
   en: "Anh",
   kr: "Hàn",
   zh: "Trung"
-  // ja: "Nhật"
 };
 
 export const localeFlags: Record<string, string> = {
@@ -22,5 +20,4 @@ export const localeFlags: Record<string, string> = {
   en: "/images/flags/flag_united_kingdom.png",
   kr: "/images/flags/flag_south_korea.png",
   zh: "/images/flags/flag_china.png"
-  // ja: "/images/flags/flag_japan.png"
 };

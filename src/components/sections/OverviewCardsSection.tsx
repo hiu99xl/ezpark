@@ -6,10 +6,8 @@ import { LocationIcon, FloorPlanIcon } from '@/components/svg'
 export default function OverviewCardsSection() {
   return (
     <section id="section-overview" className="py-20 relative px-4 sm:px-8">
-      {/* Container width = card1 + gap1 + card2 + gap2 + card3 = 818.13px | 79.89vw | 3068px */}
       <div className="w-full max-w-[clamp(818.13px,79.89vw,3068px)] mx-auto">
         <div className="text-center mb-16">
-          {/* 3 black dots: 8px wide, 10px apart */}
           <div className="flex justify-center gap-[10px] mb-3" aria-hidden>
             <span className="w-2 h-2 rounded-full bg-black" />
             <span className="w-2 h-2 rounded-full bg-black" />
@@ -48,7 +46,6 @@ export default function OverviewCardsSection() {
                 <span className="text-white font-light text-[clamp(16px,1.5625vw,60px)]">ha</span>
               </div>
             </div>
-            {/* Ez.Park logo at bottom right of card 1 */}
             <div
               className="absolute bottom-4 right-4 w-[clamp(91.73px,8.96vw,344px)] h-auto pointer-events-none z-10"
               aria-hidden

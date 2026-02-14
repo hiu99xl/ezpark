@@ -66,10 +66,6 @@ function collectParagraphTexts(node: LexicalNode, out: string[]): void {
   }
 }
 
-/**
- * Parse Lexical news content into ordered blocks (paragraphs and images).
- * Handles type 'paragraph', 'upload'; fallback: collect any text so API content is never dropped.
- */
 export function parseNewsContentToBlocks(content: { root?: LexicalRoot }, apiBaseUrl: string): NewsContentBlock[] {
   const blocks: NewsContentBlock[] = [];
   const children = content?.root?.children;

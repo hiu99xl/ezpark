@@ -1,10 +1,6 @@
 import { NextRequest } from 'next/server';
 import { fetchNewsArticleData, fetchNewsArticleDataBySlug, getFeaturedNewsId } from '@/lib/api/news';
 
-/**
- * GET /api/news?id=12&locale=vi  or  /api/news?slug=my-slug&locale=vi
- * Proxies to backend so client can fetch news once in useEffect.
- */
 export async function GET(request: NextRequest) {
   const { searchParams } = new URL(request.url);
   const id = searchParams.get('id');

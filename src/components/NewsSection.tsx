@@ -70,7 +70,6 @@ export default function NewsSection({ featuredNews }: NewsSectionProps) {
         lg:pt-[clamp(72px,7.03vw,270px)] lg:px-[clamp(61px,5.93vw,228px)] lg:pb-[clamp(165px,16.15vw,621px)]
       "
     >
-      {/* TITLE LINK TO NEWS PAGE */}
       <Link href="/news" className="relative w-full lg:flex lg:flex-col lg:gap-[clamp(25px,2.42vw,93px)] lg:-mb-[clamp(110px,10.77vw,413px)]">
         <div className="flex items-center flex-col lg:flex-row w-full group gap-[clamp(11.4px,3.03vw,23.3px)]">
           <h2
@@ -98,9 +97,7 @@ export default function NewsSection({ featuredNews }: NewsSectionProps) {
         </div>
       </Link>
 
-      {/* NEW CONTENT */}
       <div className="grid grid-cols-1 lg:grid-cols-11 flex-col-reverse lg:flex-row gap-[clamp(11.67px,3.11vw,23.89px)] lg:gap-[clamp(44px,4.25vw,163px)]">
-        {/* TEXT */}
         <div className="col-span-5 flex flex-col justify-between px-[clamp(5.91px,1.58vw,12.09px)] lg:mt-[clamp(110px,10.77vw,413px)] lg:px-0">
           <div className="flex flex-col items-start">
             <h3 className="font-extrabold text-[#2b2b2b] leading-snug text-[clamp(15px,4vw,30.72px)] lg:text-[clamp(12px,1.20vw,46px)] mb-[clamp(9.81px,2.62vw,20.08px)] lg:mb-[clamp(11px,1.05vw,40px)]">
@@ -196,7 +193,6 @@ export default function NewsSection({ featuredNews }: NewsSectionProps) {
           </div>
         </div>
 
-        {/* IMAGE */}
         <div
           className="
             col-span-6 relative overflow-visible mx-auto pl-0

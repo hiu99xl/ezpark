@@ -4,7 +4,6 @@ const ANIMATION_DELAY = '0.02s'
 
 type AnimationType = 'center' | 'right'
 
-/** Single letter with optional underline (e.g. "a" in "easy") */
 function AnimatedLetter({
   char,
   animation,
@@ -30,7 +29,6 @@ function AnimatedLetter({
   )
 }
 
-/** Word rendered as animated letters */
 function AnimatedWord({
   text,
   animation,
@@ -54,7 +52,6 @@ function AnimatedWord({
   )
 }
 
-/** Line config: text, animation, and h2 className */
 const SLOGAN_LINES = [
   {
     text: 'THINK',
@@ -83,10 +80,6 @@ const SLOGAN_LINES = [
   },
 ] as const
 
-/**
- * Slogan block "THINK / easy / DO / better" – same layout and styling as Hero.
- * Used in HeroSection and VisionMissionSection.
- */
 export default function ThinkEasyDoBetter() {
   return (
     <div className="relative">

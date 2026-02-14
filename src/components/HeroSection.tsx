@@ -22,7 +22,6 @@ export default function HeroSection({ pageData }: HeroSectionProps) {
         'flex flex-col',
       )}
     >
-      {/* Background */}
       <div className="absolute inset-0 z-0">
         <Image
           src="/images/home/bg_bn.png"
@@ -41,7 +40,6 @@ export default function HeroSection({ pageData }: HeroSectionProps) {
         <div className="flex flex-col gap-8 w-full max-w-[1600px]">
           <div className="flex flex-col w-full items-end">
             <div className="flex items-center gap-3 mt-2 flex-wrap">
-              {/* khu công nghiệp trên, EZ.PARK + border dưới – dịch lên bằng transform */}
               <div className="flex flex-col leading-none -translate-y-8 translate-x-16">
                 <p className="text-[clamp(25.6px,2.5vw,96px)] text-white/90 font-light tracking-wide leading-none">
                   {t('subtitle')}
@@ -85,7 +83,6 @@ export default function HeroSection({ pageData }: HeroSectionProps) {
                 <ArrowRightSvg className="w-5 h-5 text-gray-900" />
               </Link>
             </div>
-            {/* Social: below CTA, slightly to the left */}
             <div className="flex items-center gap-4 lg:-ml-4">
               <a
                 href="https://www.linkedin.com"
@@ -119,9 +116,7 @@ export default function HeroSection({ pageData }: HeroSectionProps) {
         </div>
       </div>
 
-      {/* Line: from ThinkEasyDoBetter (left) to end of carousel label (right) + 2 dots */}
       <div className="absolute bottom-8 left-0 right-0 z-10">
-        {/* Line segment from left to start of carousel label */}
         <div
           className="absolute bottom-0 left-[clamp(20px,4vw,60px)] lg:left-[clamp(94px,9.2vw,354px)] right-1/2 h-[2.5px] bg-white"
           aria-hidden="true"
@@ -131,13 +126,11 @@ export default function HeroSection({ pageData }: HeroSectionProps) {
         </div>
       </div>
 
-      {/* Bottom center: carousel label + line (line matches label width exactly) */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-3">
         <span className="text-[10px] sm:text-xs text-white/60 tracking-widest uppercase">
           {t('carouselLabel')}
         </span>
         <div className="w-full h-[2.5px] bg-white relative" aria-hidden="true">
-          {/* Two 16px dots: outside line on the right, 16px from line, 8px apart */}
           <span
             className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-8 w-4 h-4 rounded-full bg-white shrink-0 pointer-events-none"
             aria-hidden="true"
@@ -149,7 +142,6 @@ export default function HeroSection({ pageData }: HeroSectionProps) {
         </div>
       </div>
 
-      {/* Bottom right: card – white bg, dark grey text, CTA = white btn + dark grey arrow btn */}
       <div className="absolute bottom-8 right-0 z-10 flex gap-4">
         <Link
           href="#section-investment-env"

@@ -59,7 +59,6 @@ export default function Footer({ hasVisionAbove = false }: FooterProps) {
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
-            // 'linear-gradient(to bottom, rgba(46,131,138,0.3) 0%, rgba(101,126,114,0.3) 11%, rgba(151,123,92,0.3) 29%, rgba(187,120,77,0.3) 51%, rgba(209,118,67,0.3) 76%, rgba(218,118,64,0.3) 100%)',
           }}
         >
           <h3 className="font-bold text-[clamp(15px,4vw,30.72px)] lg:text-[clamp(17px,1.71vw,66px)]">
@@ -166,7 +165,6 @@ export default function Footer({ hasVisionAbove = false }: FooterProps) {
             lg:grid-cols-12 lg:pb-[clamp(22px,2.10vw,81px)] lg:pr-0 lg:pl-[clamp(363px,35.40vw,1360px)]
           "
         >
-          {/* Company Information */}
           <div
             className="
               text-white text-left flex flex-col
@@ -195,7 +193,6 @@ export default function Footer({ hasVisionAbove = false }: FooterProps) {
               <p className="text-[clamp(9.06px,2.42vw,18.55px)] lg:text-[clamp(9px,0.85vw,33px)] font-[200]">{t('footer.company.businessAddress')}</p>
             </div>
           </div>
-          {/* Social Media */}
           <div className="col-span-1 lg:col-span-2 text-white flex flex-col items-end justify-end gap-[clamp(16.32px,4.35vw,33.43px)]">
             <button
               onClick={scrollToTop}
@@ -211,7 +208,6 @@ export default function Footer({ hasVisionAbove = false }: FooterProps) {
                 className="w-[clamp(36.75px,9.8vw,75.26px)] lg:w-[clamp(22px,2.19vw,84px)] h-auto"
               />
             </button>
-            {/* Follow Us */}
             <div className="flex items-center">
               <a
                   href="https://www.linkedin.com/company/108749043"
@@ -228,15 +224,7 @@ export default function Footer({ hasVisionAbove = false }: FooterProps) {
                   className="w-[clamp(69px,18.4vw,141.31px)] lg:w-[clamp(49px,4.79vw,184px)] h-auto"
                 />
               </a>
-              {/* <Image
-                src="/images/footer/follow_us.svg"
-                alt="Follow Us"
-                width={80}
-                height={24}
-                className="h-5 w-auto md:h-6"
-              /> */}
             </div>
-            {/* Email */}
             <div className="flex items-center gap-2">
                 <Image
                   src="/images/home/footer_mail.svg"
@@ -246,7 +234,6 @@ export default function Footer({ hasVisionAbove = false }: FooterProps) {
                   className="w-[clamp(23.25px,6.2vw,47.62px)] lg:w-[clamp(18px,1.72vw,66px)] h-auto"
                 />
             </div>
-            {/* Call Us */}
             <div className="relative flex items-center justify-center w-[clamp(36px,9.6vw,73.73px)] h-[clamp(36px,9.6vw,73.73px)] translate-x-[20%]">
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="absolute rounded-full border border-orange-400 animate-ping w-[clamp(22.5px,6vw,46.08px)] lg:w-[clamp(20px,1.92vw,74px)] h-[clamp(22.5px,6vw,46.08px)] lg:h-[clamp(20px,1.92vw,74px)] opacity-60" />

@@ -1,7 +1,6 @@
 import React from 'react';
 import { cn } from '@/lib/utils';
 
-/** "Think Easy Do Better" tagline logo for header (127×55). */
 export default function HeaderTaglineLogoSvg({ className }: { className?: string }) {
   return (
     <svg

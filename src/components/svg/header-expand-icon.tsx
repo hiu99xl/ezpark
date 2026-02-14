@@ -1,7 +1,6 @@
 import React from 'react';
 import { cn } from '@/lib/utils';
 
-/** Four-arrows expand icon for header (30×30). */
 export default function HeaderExpandIconSvg({ className }: { className?: string }) {
   return (
     <svg
