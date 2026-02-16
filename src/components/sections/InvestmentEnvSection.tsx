@@ -1,6 +1,9 @@
 'use client'
 
 import Image from 'next/image'
+import { Link } from '@/i18n/navigation'
+import { useTranslations } from 'next-intl'
+import { SECTION_PADDING_X, SECTION_CONTENT_WRAPPER_CLASS } from '@/constants/layout'
 
 const IconTransport = () => (
   <svg width="31" height="17" viewBox="0 0 31 17" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-5 w-auto text-primary">
@@ -19,9 +22,10 @@ const IconPin = () => (
 )
 
 export default function InvestmentEnvSection() {
+  const t = useTranslations()
   return (
-    <section id="section-investment-env" className="bg-white py-16 md:py-20">
-      <div className="w-full max-w-[clamp(903.47px,88.23vw,3388px)] mx-auto px-4 sm:px-8">
+    <section id="section-investment-env" className={`bg-white py-16 md:py-20 ${SECTION_PADDING_X}`}>
+      <div className={SECTION_CONTENT_WRAPPER_CLASS}>
         <div className="flex items-center justify-end gap-0 w-full mb-4">
           <svg className="flex-shrink-0 h-8" viewBox="0 0 470 31" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden style={{ width: 'clamp(249.6px, 24.375vw, 936px)' }}>
             <path d="M90.8896 15.75H469.82" stroke="#757575" strokeWidth="3" strokeMiterlimit="10" />
@@ -121,15 +125,18 @@ export default function InvestmentEnvSection() {
             </div>
 
             <div className="mt-8">
-              <button
-                type="button"
-                className="bg-primary text-white px-6 py-3 text-sm font-medium hover:bg-primary/90 transition-colors inline-flex items-center gap-2"
+              <Link
+                href="/news"
+                className="bg-primary text-white rounded-bl-[4rem] rounded-tr-[4rem] hover:bg-primary/90 transition flex items-center
+                  py-[clamp(5.17px,1.38vw,10.58px)] pl-[clamp(22.21px,5.92vw,45.48px)] pr-[clamp(16.12px,4.3vw,33.01px)] text-[clamp(10.5px,2.8vw,21.5px)] gap-[clamp(12.08px,3.22vw,24.73px)]
+                  lg:py-[clamp(5px,0.47vw,18px)] lg:pl-[clamp(21px,2.03vw,79px)] lg:pr-[clamp(15px,1.48vw,57px)] lg:text-[clamp(8px,0.76vw,29px)] lg:gap-[clamp(11px,1.10vw,42px)]
+                "
               >
-                Xem thêm...
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="shrink-0">
-                  <path d="M5 12h14M12 5l7 7-7 7" />
-                </svg>
-              </button>
+                {t('news.article.readMore')}
+                <div className=" flex items-center justify-center rounded-full bg-white w-[clamp(18px,4.8vw,36.86px)] h-[clamp(18px,4.8vw,36.86px)] lg:w-[clamp(13px,1.30vw,50px)] lg:h-[clamp(13px,1.30vw,50px)]">
+                  <span className="text-[clamp(15px,4vw,30.72px)] lg:text-[clamp(13px,1.25vw,48px)] text-primary leading-none mb-[clamp(4.5px,1.2vw,9.22px)] lg:mb-[clamp(5px,0.52vw,20px)]">&rarr;</span>
+                </div>
+              </Link>
             </div>
           </div>
         </div>

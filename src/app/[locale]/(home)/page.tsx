@@ -7,6 +7,7 @@ import {
   AdvantagesSection,
   InvestorProcessSection,
   InvestmentEnvSection,
+  InvestorSupportSection,
 } from '@/components/sections'
 import NewsSection from '@/components/NewsSection'
 import FooterSection from '@/components/FooterSection'
@@ -40,6 +41,7 @@ export default async function Home({
       <VRTourSection />
       <OverviewCardsSection />
       <AdvantagesSection />
+      <InvestorSupportSection />
       <InvestorProcessSection />
       <InvestmentEnvSection />
       <NewsSection />

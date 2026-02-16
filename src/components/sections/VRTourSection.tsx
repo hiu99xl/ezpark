@@ -1,11 +1,12 @@
 'use client'
 
 import Image from 'next/image'
+import { SECTION_PADDING_X, SECTION_CONTENT_WRAPPER_CLASS } from '@/constants/layout'
 
 export default function VRTourSection() {
   return (
-    <section id="section-master-plan" className="w-full py-9">
-      <div className="w-full max-w-[clamp(903.47px,88.23vw,3388px)] mx-auto px-4 sm:px-8">
+    <section id="section-master-plan" className={`w-full py-9 ${SECTION_PADDING_X}`}>
+      <div className={SECTION_CONTENT_WRAPPER_CLASS}>
         <div className="flex justify-end mb-8" aria-hidden>
           <Image
             src="/images/home/line_vr.svg"
@@ -20,7 +21,7 @@ export default function VRTourSection() {
             src="/images/home/vr_images.png"
             alt="VR Tour"
             fill
-            className="object-cover transition-transform duration-700 group-hover:scale-105"
+            className="object-cover"
             sizes="(max-width: 768px) 100vw, 1440px"
           />
         </div>

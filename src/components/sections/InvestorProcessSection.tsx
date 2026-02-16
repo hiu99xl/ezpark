@@ -1,6 +1,7 @@
 'use client'
 
 import Image from 'next/image'
+import { SECTION_PADDING_X, SECTION_CONTENT_WRAPPER_CLASS } from '@/constants/layout'
 
 const TEAL = '#428999'
 
@@ -18,7 +19,7 @@ const STEPS = [
 
 export default function InvestorProcessSection() {
   return (
-    <section id="section-investor-process" className="relative text-white py-24 overflow-hidden">
+    <section id="section-investor-process" className={`relative text-white py-24 overflow-hidden ${SECTION_PADDING_X}`}>
       <div className="absolute inset-0 z-0">
         <Image
           src="/images/sections/investor_bg.png"
@@ -29,7 +30,7 @@ export default function InvestorProcessSection() {
         />
       </div>
 
-      <div className="relative z-10 max-w-[1440px] mx-auto px-4 sm:px-8">
+      <div className={`relative z-10 ${SECTION_CONTENT_WRAPPER_CLASS}`}>
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
 
           <div className="lg:col-span-8">
@@ -44,7 +45,7 @@ export default function InvestorProcessSection() {
                     key={step.num}
                     className="bg-white/5 border border-white/10 p-4 rounded-xl backdrop-blur-sm hover:bg-primary/20 transition-colors"
                   >
-                    <div
+                    <div  
                       className="text-3xl font-bold mb-2 text-gray-500"
                       style={step.highlight ? { color: TEAL } : undefined}
                     >

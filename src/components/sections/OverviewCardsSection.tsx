@@ -2,11 +2,12 @@
 
 import Image from 'next/image'
 import { LocationIcon, FloorPlanIcon } from '@/components/svg'
+import { SECTION_PADDING_X, SECTION_CONTENT_WRAPPER_CLASS } from '@/constants/layout'
 
 export default function OverviewCardsSection() {
   return (
-    <section id="section-overview" className="py-20 relative px-4 sm:px-8">
-      <div className="w-full max-w-[clamp(818.13px,79.89vw,3068px)] mx-auto">
+    <section id="section-overview" className={`py-20 relative ${SECTION_PADDING_X}`}>
+      <div className={SECTION_CONTENT_WRAPPER_CLASS}>
         <div className="text-center mb-16">
           <div className="flex justify-center gap-[10px] mb-3" aria-hidden>
             <span className="w-2 h-2 rounded-full bg-black" />
@@ -17,7 +18,7 @@ export default function OverviewCardsSection() {
           <h2 className="text-black font-semibold text-[clamp(56.53px,5.52vw,212px)] leading-[1.15]">Ez.Park Bắc Ninh I</h2>
         </div>
 
-        <div className="flex flex-col md:flex-row md:flex-nowrap gap-y-6 md:gap-y-0 md:min-w-[79.89vw]">
+        <div className="flex flex-col md:flex-row md:flex-nowrap md:justify-center gap-y-6 md:gap-y-0 md:min-w-0">
           <div className="relative w-full md:w-[clamp(325.33px,31.77vw,1220px)] md:shrink-0 md:mr-[clamp(21.33px,2.08vw,80px)] h-[552px] rounded-2xl overflow-hidden group">
             <Image
               src="/images/home/project_bn.png"
